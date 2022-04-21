@@ -1,0 +1,34 @@
+{
+    "version": "1.0.6-alpha5",
+    "description": "A mod manager for games running on DICE's Frostbite engine",
+    "homepage": "https://frostytoolsuite.com",
+    "license": "CC-BY-NC-ND-4.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/CadeEvs/FrostyToolsuite/releases/download/v1.0.6-alpha5/FrostyModManager.zip",
+            "hash": "99d9410b0ba1d87e55dbc36a5bb0ccc91a9867176b5b951ccc21bea165d93e0a",
+            "shortcuts": [
+                [
+                    "FrostyModManager.exe",
+                    "Frosty Mod Manager"
+                ]
+            ]
+        }
+    },
+    "persist": [
+        "Caches",
+        "Mods"
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/CadeEvs/FrostyToolsuite/releases",
+        "jsonpath": "$[0].tag_name",
+        "regex": "v([\\w.-]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/CadeEvs/FrostyToolsuite/releases/download/v$version/FrostyModManager.zip"
+            }
+        }
+    }
+}
