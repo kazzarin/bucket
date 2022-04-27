@@ -1,0 +1,18 @@
+{
+    "version": "0.1.41-beta",
+    "description": "A utility that allows you to apply themes to the new Steam friends UI",
+    "homepage": "https://github.com/PhantomGamers/SteamFriendsPatcher",
+    "license": "MIT",
+    "url": "https://github.com/PhantomGamers/SteamFriendsPatcher/releases/download/0.1.41-beta/SteamFriendsPatcher-0.1.41-beta.zip",
+    "hash": "bc04af664bceedbb35f45ac643d23da6ab5f57f1d10ba9db821895a8654865e2",
+    "shortcuts": [
+        [
+            "SteamFriendsPatcher.exe",
+            "Steam Friends Patcher"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/PhantomGamers/SteamFriendsPatcher/releases/download/$version/SteamFriendsPatcher-$version.zip"
+    }
+}
