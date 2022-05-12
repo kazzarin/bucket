@@ -15,7 +15,7 @@
             "bin": "ExifTool.exe"
         }
     },
-    "checkver": "exiftool-([\\d.]+)_64\\.zip package without installer, 64 bit version",
+    "checkver": "exiftool-([\\d.]+)_64\\.zip",
     "autoupdate": {
         "architecture": {
             "32bit": {
