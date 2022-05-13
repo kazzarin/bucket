@@ -14,7 +14,7 @@
     "checkver": {
         "url": "https://api.github.com/repos/PhantomGamers/SteamFriendsPatcher/releases/latest",
         "jsonpath": "$.tag_name",
-        "regex": "v([\\w.-]+)"
+        "regex": "([\\w.-]+)"
     },
     "autoupdate": {
         "url": "https://github.com/PhantomGamers/SteamFriendsPatcher/releases/download/$version/SteamFriendsPatcher-$version.zip"
