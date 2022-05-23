@@ -1,10 +1,10 @@
 {
-    "version": "4.4.1",
+    "version": "4.4.2",
     "description": "A tool to fix Frosty support with games on platforms other than Origin",
     "homepage": "https://github.com/Dyvinia/FrostyFix",
     "license": "Unknown",
-    "url": "https://github.com/Dyvinia/FrostyFix/releases/download/v4.4.1/FrostyFix.exe",
-    "hash": "5cb7001f8eeeb45af2b3e44c6b268aac79f20c5213ecf6228f9b80bcce0a5a6c",
+    "url": "https://github.com/Dyvinia/FrostyFix/releases/download/v4.4.2/FrostyFix.exe",
+    "hash": "fd675d259ec8f661d419cfeda4bc19096b69976fb4573f97ad42431f4384dedc",
     "shortcuts": [
         [
             "FrostyFix.exe",
