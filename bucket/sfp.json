@@ -19,6 +19,6 @@
     "persist": "SFP.config",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/PhantomGamers/SFP/releases/download/$version/SFP_UI-SelfContained-win-x64.zip"
+        "url": "https://github.com/PhantomGamers/SFP/releases/download/$version/SFP_UI-SelfContained-win10-x64.zip"
     }
 }
