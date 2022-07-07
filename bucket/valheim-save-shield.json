@@ -1,0 +1,18 @@
+{
+    "version": "0.4.13.0",
+    "description": "Automatically back up your Valheim character and world saves",
+    "homepage": "https://github.com/Razzmatazzz/ValheimSaveShield",
+    "license": "GPL-2.0",
+    "url": "https://github.com/Razzmatazzz/ValheimSaveShield/releases/download/0.4.13.0/vss-0.4.13.0.zip",
+    "hash": "f65c1ad731b2d39a4f926a81aa284b81cfbb14ae5100eec60e4b6eb54443b757",
+    "shortcuts": [
+        [
+            "ValheimSaveShield.exe",
+            "Valheim Save Shield"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/Razzmatazzz/ValheimSaveShield/releases/download/$version/vss-$version.zip"
+    }
+}
