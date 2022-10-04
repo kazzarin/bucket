@@ -1,17 +1,17 @@
 {
-    "version": "12.46",
+    "version": "12.47",
     "description": "An alternative build of ExifTool using Strawberry Perl",
     "homepage": "https://oliverbetz.de/pages/Artikel/ExifTool-for-Windows",
     "license": "CC0-1.0|GPL-1.0-or-later|Artistic-1.0-Perl",
     "architecture": {
         "32bit": {
-            "url": "https://oliverbetz.de/cms/files/Artikel/ExifTool-for-Windows/exiftool-12.46_32.zip",
-            "hash": "6b85c1768842fba4673aa69c5dd51c8fd94393dc5d4c826009fef626f51df8f6",
+            "url": "https://oliverbetz.de/cms/files/Artikel/ExifTool-for-Windows/exiftool-12.47_32.zip",
+            "hash": "560604d81ec1945b9063eeec21da3c7f2cd962ce6d5fffff20e3a0b31d4e1cae",
             "bin": "ExifTool.exe"
         },
         "64bit": {
-            "url": "https://oliverbetz.de/cms/files/Artikel/ExifTool-for-Windows/exiftool-12.46_64.zip",
-            "hash": "0f59710c589ec569ffc78cc646276d05c6e4b52f19afc19747cb02a887acb847",
+            "url": "https://oliverbetz.de/cms/files/Artikel/ExifTool-for-Windows/exiftool-12.47_64.zip",
+            "hash": "5871e0fe5c1c5872ac2f25735f4b7703ddc911571f4391cd31a0036c97da97db",
             "bin": "ExifTool.exe"
         }
     },
