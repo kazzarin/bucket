@@ -1,0 +1,37 @@
+{
+    "version": "2.1.9.0002",
+    "description": "An unofficial launcher for Need for Speed: World",
+    "homepage": "https://soapboxrace.world",
+    "license": "GPL-3.0",
+    "url": "https://github.com/SoapboxRaceWorld/GameLauncher_NFSW/releases/download/2.1.9.0002/Release_2.1.9.0002.zip",
+    "hash": "sha1:5bb3f71aefdb04acea92152726bd1bf55e00d9cf",
+    "pre_install": [
+        "if (!($global)) { error \"$app must be installed globally\"; break }",
+        "if (!(Test-Path \"$persist_dir\\Account.ini\")) {",
+        "    Add-Content \"$dir\\Account.ini\" \"[GameLauncher]`r`n\" -Encoding Ascii",
+        "}",
+        "if (!(Test-Path \"$persist_dir\\Settings.ini\")) {",
+        "    Add-Content \"$dir\\Settings.ini\" \"[GameLauncher]`r`n\" -Encoding Ascii",
+        "}"
+    ],
+    "shortcuts": [
+        [
+            "GameLauncher.exe",
+            "Soapbox Race World"
+        ]
+    ],
+    "persist": [
+        "Account.ini",
+        "Settings.ini"
+    ],
+    "checkver": {
+        "github": "https://github.com/SoapboxRaceWorld/GameLauncher_NFSW"
+    },
+    "autoupdate": {
+        "url": "https://github.com/SoapboxRaceWorld/GameLauncher_NFSW/releases/download/$version/Release_$version.zip",
+        "hash": {
+            "url": "https://github.com/SoapboxRaceWorld/GameLauncher_NFSW/releases/tag/$version",
+            "regex": "ZIP: $sha1"
+        }
+    }
+}
