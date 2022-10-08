@@ -39,7 +39,7 @@
             }
         },
         "hash": {
-            "url": "https://github.com/runelite/launcher/releases/latest"
+            "url": "https://github.com/runelite/launcher/releases/$version"
         }
     }
 }
