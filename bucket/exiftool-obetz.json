@@ -4,25 +4,24 @@
     "homepage": "https://oliverbetz.de/pages/Artikel/ExifTool-for-Windows",
     "license": "CC0-1.0|GPL-1.0-or-later|Artistic-1.0-Perl",
     "architecture": {
-        "32bit": {
-            "url": "https://oliverbetz.de/cms/files/Artikel/ExifTool-for-Windows/exiftool-12.47_32.zip",
-            "hash": "560604d81ec1945b9063eeec21da3c7f2cd962ce6d5fffff20e3a0b31d4e1cae",
-            "bin": "ExifTool.exe"
-        },
         "64bit": {
             "url": "https://oliverbetz.de/cms/files/Artikel/ExifTool-for-Windows/exiftool-12.47_64.zip",
-            "hash": "5871e0fe5c1c5872ac2f25735f4b7703ddc911571f4391cd31a0036c97da97db",
-            "bin": "ExifTool.exe"
+            "hash": "5871e0fe5c1c5872ac2f25735f4b7703ddc911571f4391cd31a0036c97da97db"
+        },
+        "32bit": {
+            "url": "https://oliverbetz.de/cms/files/Artikel/ExifTool-for-Windows/exiftool-12.47_32.zip",
+            "hash": "560604d81ec1945b9063eeec21da3c7f2cd962ce6d5fffff20e3a0b31d4e1cae"
         }
     },
+    "bin": "ExifTool.exe",
     "checkver": "exiftool-([\\d.]+)_64\\.zip",
     "autoupdate": {
         "architecture": {
-            "32bit": {
-                "url": "https://oliverbetz.de/cms/files/Artikel/ExifTool-for-Windows/exiftool-$version_32.zip"
-            },
             "64bit": {
                 "url": "https://oliverbetz.de/cms/files/Artikel/ExifTool-for-Windows/exiftool-$version_64.zip"
+            },
+            "32bit": {
+                "url": "https://oliverbetz.de/cms/files/Artikel/ExifTool-for-Windows/exiftool-$version_32.zip"
             }
         }
     }
