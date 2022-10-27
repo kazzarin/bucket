@@ -5,11 +5,11 @@
     "license": "BSD-2-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/runelite/launcher/releases/download/2.5.0/RuneLiteSetup.exe",
+            "url": "https://github.com/runelite/launcher/releases/download/2.5.0/RuneLiteSetup.exe#/dl.7z",
             "hash": "ac76a2893fc98a39bd40d08604285bfe861560faf5b40904ac4d085701fd6d1f"
         },
         "32bit": {
-            "url": "https://github.com/runelite/launcher/releases/download/2.5.0/RuneLiteSetup32.exe",
+            "url": "https://github.com/runelite/launcher/releases/download/2.5.0/RuneLiteSetup32.exe#/dl.7z",
             "hash": "8af26bcae69fe096342d3637625c5960796bc75ab30a431fe28b58891a1df209"
         }
     },
@@ -26,10 +26,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/runelite/launcher/releases/download/$version/RuneLiteSetup.exe"
+                "url": "https://github.com/runelite/launcher/releases/download/$version/RuneLiteSetup.exe#/dl.7z"
             },
             "32bit": {
-                "url": "https://github.com/runelite/launcher/releases/download/$version/RuneLiteSetup32.exe"
+                "url": "https://github.com/runelite/launcher/releases/download/$version/RuneLiteSetup32.exe#/dl.7z"
             }
         },
         "hash": {
