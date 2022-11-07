@@ -2,7 +2,7 @@
     "version": "4.4.1",
     "description": "A real-time 3D viewer for displaying LDraw models",
     "homepage": "https://tcobbs.github.io/ldview/",
-    "license": "GPL-2.0",
+    "license": "GPL-2.0-only|MIT",
     "architecture": {
         "64bit": {
             "url": "https://github.com/tcobbs/ldview/releases/download/v4.4.1/LDView64-4401.exe#/dl.7z",

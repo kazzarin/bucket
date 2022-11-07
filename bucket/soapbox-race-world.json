@@ -2,7 +2,7 @@
     "version": "2.2.0.0",
     "description": "An unofficial launcher for Need for Speed: World",
     "homepage": "https://soapboxrace.world",
-    "license": "GPL-3.0",
+    "license": "GPL-3.0-only",
     "url": "https://github.com/SoapboxRaceWorld/GameLauncher_NFSW/releases/download/2.2.0.0/Release_2.2.0.0.zip",
     "hash": "81874a38daf0b8c08b257e35b779106c3ff2e37e7a126a7340c26cea1f5deaad",
     "pre_install": [
