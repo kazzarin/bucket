@@ -17,8 +17,7 @@
     ],
     "persist": [
         "Caches",
-        "Mods",
-        "Plugins"
+        "Mods"
     ],
     "checkver": {
         "url": "https://api.github.com/repos/CadeEvs/FrostyToolsuite/releases",
