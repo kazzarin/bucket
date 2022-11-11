@@ -29,6 +29,20 @@
         "    Add-Content \"$dir\\settings.json\" '{}' -Encoding Ascii",
         "}"
     ],
+    "pre_uninstall": [
+        "if (Test-Path \"$dir\\GameClients.json\") {",
+        "    Copy-Item \"$dir\\GameClients.json\" \"$persist_dir\\\"",
+        "}",
+        "if (Test-Path \"$dir\\ModuleCache.json\") {",
+        "    Copy-Item \"$dir\\ModuleCache.json\" \"$persist_dir\\\"",
+        "}",
+        "if (Test-Path \"$dir\\ServerList.json\") {",
+        "    Copy-Item \"$dir\\ServerList.json\" \"$persist_dir\\\"",
+        "}",
+        "if (Test-Path \"$dir\\settings.json\") {",
+        "    Copy-Item \"$dir\\settings.json\" \"$persist_dir\\\"",
+        "}"
+    ],
     "shortcuts": [
         [
             "BLREdit.exe",
