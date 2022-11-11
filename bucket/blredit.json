@@ -1,0 +1,53 @@
+{
+    "version": "0.7.9",
+    "description": "A loadout editor for Blacklight Revive",
+    "homepage": "https://github.com/HALOMAXX/BLREdit",
+    "license": "MIT",
+    "url": [
+        "https://github.com/HALOMAXX/BLREdit/releases/download/v0.7.9/BLREdit.zip",
+        "https://github.com/HALOMAXX/BLREdit/releases/download/v0.7.9/Assets.zip"
+    ],
+    "hash": [
+        "d4cb71e9bed8050f4961371d0a68c3cc7eb96ff024cd35c28bfd6db90406ea05",
+        "a28586d8877177525dc01b85df12d3143d56596d4523f03768534b6dc8807478"
+    ],
+    "extract_to": [
+        "",
+        "Assets"
+    ],
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\GameClients.json\")) {",
+        "    Add-Content \"$dir\\GameClients.json\" '[]' -Encoding Ascii",
+        "}",
+        "if (!(Test-Path \"$persist_dir\\ModuleCache.json\")) {",
+        "    Add-Content \"$dir\\ModuleCache.json\" '[]' -Encoding Ascii",
+        "}",
+        "if (!(Test-Path \"$persist_dir\\ServerList.json\")) {",
+        "    Add-Content \"$dir\\ServerList.json\" '[]' -Encoding Ascii",
+        "}",
+        "if (!(Test-Path \"$persist_dir\\settings.json\")) {",
+        "    Add-Content \"$dir\\settings.json\" '{}' -Encoding Ascii",
+        "}"
+    ],
+    "shortcuts": [
+        [
+            "BLREdit.exe",
+            "BLREdit"
+        ]
+    ],
+    "persist": [
+        "Backup",
+        "Profiles",
+        "GameClients.json",
+        "ModuleCache.json",
+        "ServerList.json",
+        "settings.json"
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": [
+            "https://github.com/HALOMAXX/BLREdit/releases/download/v$version/BLREdit.zip",
+            "https://github.com/HALOMAXX/BLREdit/releases/download/v$version/Assets.zip"
+        ]
+    }
+}
