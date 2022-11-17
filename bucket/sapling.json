@@ -1,5 +1,5 @@
 {
-    "version": "20221115-080554-34470671",
+    "version": "20221116-203146-2c1a971a",
     "description": "A cross-platform, highly scalable, Git-compatible source control system",
     "homepage": "https://sapling-scm.com",
     "license": "GPL-2.0-only",
@@ -8,13 +8,19 @@
         "Node.js is required to use the web GUI"
     ],
     "suggest": {
-        "Git": ["git", "mingit"],
-        "Node.js": ["nodejs", "nodejs-lts"]
+        "Git": [
+            "git",
+            "mingit"
+        ],
+        "Node.js": [
+            "nodejs",
+            "nodejs-lts"
+        ]
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/facebook/sapling/releases/download/20221115-080554-34470671/sapling_windows_20221115.080554.34470671_amd64.zip",
-            "hash": "cb529f44fff0e8cd4a50a377eb4f5a58ce7403ed68eaa3bc0b50b24ca66123df",
+            "url": "https://github.com/facebook/sapling/releases/download/20221116-203146-2c1a971a/sapling_windows_20221116.203146.2c1a971a_amd64.zip",
+            "hash": "5f2b42af77af9d800a3d670014f1f9009699c3cd2aff7b73ecd577883e19dcf0",
             "extract_dir": "Sapling"
         }
     },
