@@ -20,10 +20,10 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/facebook/sapling/releases/download/20221116-203146-2c1a971a/sapling_windows_20221116.203146.2c1a971a_amd64.zip",
-            "hash": "5f2b42af77af9d800a3d670014f1f9009699c3cd2aff7b73ecd577883e19dcf0",
-            "extract_dir": "Sapling"
+            "hash": "5f2b42af77af9d800a3d670014f1f9009699c3cd2aff7b73ecd577883e19dcf0"
         }
     },
+    "extract_dir": "Sapling",
     "bin": [
         "sl.exe",
         [
@@ -37,14 +37,12 @@
     ],
     "checkver": {
         "url": "https://api.github.com/repos/facebook/sapling/releases/latest",
-        "jsonpath": "$.tag_name",
-        "regex": "(([\\d]+)-([\\d]+)-([\\w]+))"
+        "jsonpath": "$.tag_name"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/facebook/sapling/releases/download/$version/sapling_windows_$match2.$match3.$match4_amd64.zip",
-                "extract_dir": "Sapling"
+                "url": "https://github.com/facebook/sapling/releases/download/$version/sapling_windows_$version_amd64.zip"
             }
         }
     }
