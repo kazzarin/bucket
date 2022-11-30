@@ -1,12 +1,12 @@
 {
-    "version": "0.9.0",
+    "version": "0.10.0",
     "description": "The official Veloren launcher",
     "homepage": "https://veloren.net",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/veloren/Airshipper/releases/download/v0.9.0/airshipper-windows.msi",
-            "hash": "3d4f72575e8ab8d978d7c0a77113d7cf89209a4b5de8946f71cc5668b7f3ea6a",
+            "url": "https://github.com/veloren/Airshipper/releases/download/v0.10.0/airshipper-windows.msi",
+            "hash": "d2b19361c504cfbf90c6733c17a12f89928b14c12787a4df0da619dbd90facdf",
             "extract_dir": "PFiles\\Airshipper"
         }
     },
