@@ -1,0 +1,24 @@
+{
+    "version": "2.0.1",
+    "description": "The successor of GNU Wget, a file and recursive website downloader",
+    "homepage": "https://github.com/rockdaboot/wget2",
+    "license": "GPL-3.0-only|LGPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/rockdaboot/wget2/files/8785944/wget2.zip",
+            "hash": "65a6a5c33f7f9a647d33ac10a5521bf5fb8930330daa140acb0fd129df84cdb2"
+        }
+    },
+    "bin": "wget2.exe",
+    "checkver": {
+        "url": "https://github.com/rockdaboot/wget2/releases/latest",
+        "regex": "v([\\d.]+)(?:[\\s\\S]*)?\/files\/(\\d+)\/wget2\\.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/rockdaboot/wget2/files/$match2/wget2.zip"
+            }
+        }
+    }
+}
