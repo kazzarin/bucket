@@ -1,0 +1,34 @@
+{
+    "version": "22.12.0-1202",
+    "description": "Provides various features to integrate your phone and your computer",
+    "homepage": "https://kdeconnect.kde.org",
+    "license": "GPL-2.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://binary-factory.kde.org/job/kdeconnect-kde_Release_win64/1202/artifact/kdeconnect-kde-22.12.0-1202-windows-cl-msvc2019-x86_64.7z",
+            "hash": "664402cfe894060d825e93a4d12ada4bff01e4b71ea00293de3017e43ea652af"
+        }
+    },
+    "bin": "bin\\kdeconnect-cli.exe",
+    "shortcuts": [
+        [
+            "bin\\kdeconnect-indicator.exe",
+            "KDE Connect"
+        ]
+    ],
+    "checkver": {
+        "url": "https://binary-factory.kde.org/job/kdeconnect-kde_Release_win64/lastSuccessfulBuild/api/json/",
+        "jsonpath": "$.artifacts[0].fileName",
+        "regex": "kdeconnect-kde-([\\d.]+-(?<build>\\d+)).*"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://binary-factory.kde.org/job/kdeconnect-kde_Release_win64/$matchBuild/artifact/kdeconnect-kde-$version-windows-cl-msvc2019-x86_64.7z",
+                "hash": {
+                    "url": "$url.sha256"
+                }
+            }
+        }
+    }
+}
