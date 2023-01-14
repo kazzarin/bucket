@@ -11,7 +11,7 @@
     },
     "bin": "wget2.exe",
     "checkver": {
-        "url": "https://github.com/rockdaboot/wget2/releases/latest",
+        "github": "https://github.com/rockdaboot/wget2",
         "regex": "v([\\d.]+)(?:[\\s\\S]*)?\/files\/(\\d+)\/wget2\\.zip"
     },
     "autoupdate": {

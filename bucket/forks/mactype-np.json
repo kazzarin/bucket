@@ -45,7 +45,7 @@
         "MacType.ini"
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/snowie2000/mactype/releases/latest",
+        "github": "https://github.com/snowie2000/mactype",
         "jsonpath": "$.tag_name",
         "regex": "([\\w.-]+)"
     },

@@ -21,7 +21,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/Dn-Programming-Core-Management/Dn-FamiTracker/releases/latest",
+        "github": "https://github.com/Dn-Programming-Core-Management/Dn-FamiTracker",
         "jsonpath": "$.tag_name",
         "regex": "Dn([\\d.]+)"
     },
