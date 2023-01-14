@@ -16,23 +16,17 @@
         "Assets"
     ],
     "pre_install": [
-        "if (!(Test-Path \"$persist_dir\\GameClients.json\")) {",
-        "    Add-Content \"$dir\\GameClients.json\" '[]' -Encoding Ascii",
-        "}",
-        "if (!(Test-Path \"$persist_dir\\ModuleCache.json\")) {",
-        "    Add-Content \"$dir\\ModuleCache.json\" '[]' -Encoding Ascii",
-        "}",
-        "if (!(Test-Path \"$persist_dir\\ServerList.json\")) {",
-        "    Add-Content \"$dir\\ServerList.json\" '[]' -Encoding Ascii",
-        "}",
-        "if (!(Test-Path \"$persist_dir\\settings.json\")) {",
-        "    Add-Content \"$dir\\settings.json\" '{}' -Encoding Ascii",
+        "foreach ($savedFile in 'GameClients','ModuleCache','ServerList','settings') {",
+        "    if (!(Test-Path \"$persist_dir\\$savedFile.json\")) {",
+        "        $fileType = ($savedFile -eq 'settings') ? '{}' : '[]'",
+        "        Add-Content \"$dir\\$savedFile.json\" $fileType -Encoding Ascii",
+        "    }",
         "}"
     ],
     "pre_uninstall": [
         "foreach ($savedFile in 'GameClients','ModuleCache','ServerList','settings') {",
         "    if (Test-Path \"$dir\\$savedFile.json\") {",
-        "        Copy-Item \"$dir\\$savedFile.json\" \"$persist_dir\\\"",
+        "        Copy-Item \"$dir\\$savedFile.json\" \"$persist_dir\\\" -Force",
         "    }",
         "}"
     ],
