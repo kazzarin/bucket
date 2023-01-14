@@ -19,7 +19,27 @@
         "ein.exe",
         "gix.exe"
     ],
-    "checkver": "github",
+    "checkver": {
+        "script": [
+            "try {",
+            "    $auth = Get-GitHubToken",
+            "    $head = @{}",
+            "    if($auth) { $head = @{'Authorization' = \"token $auth\"} }",
+            "    $url = 'https://api.github.com/repos/Byron/gitoxide/releases?per_page=100'",
+            "    $latest_ver = [Version]::new(0,0,0,0)",
+            "    $releases = $(Invoke-WebRequest -Headers $head $url).Content | ConvertFrom-Json",
+            "    $releases | ForEach-Object {",
+            "        if (!($_.tag_name -match '^v([\\d.]+)')) { return }",
+            "        $ver = [Version]::new($matches[1])",
+            "        if ($ver -gt $latest_ver) { $latest_ver = $ver }",
+            "    }",
+            "    if ($latest_ver -eq [Version]::new(0,0,0,0)) { error \"Could not match version string in '$url'\"; break }",
+            "    Write-Output $latest_ver",
+            "}",
+            "catch { error $_.Exception.Message; throw }"
+        ],
+        "regex": "([\\d.]+)"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
