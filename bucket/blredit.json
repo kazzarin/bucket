@@ -1,15 +1,15 @@
 {
-    "version": "0.9.4",
+    "version": "0.9.5",
     "description": "A loadout editor for Blacklight Revive",
     "homepage": "https://github.com/HALOMAXX/BLREdit",
     "license": "MIT",
     "url": [
-        "https://github.com/HALOMAXX/BLREdit/releases/download/v0.9.4/BLREdit.zip",
-        "https://github.com/HALOMAXX/BLREdit/releases/download/v0.9.4/Assets.zip"
+        "https://github.com/HALOMAXX/BLREdit/releases/download/v0.9.5/BLREdit.zip",
+        "https://github.com/HALOMAXX/BLREdit/releases/download/v0.9.5/Assets.zip"
     ],
     "hash": [
-        "b6e02eaf659e2520e02b1528c3b5ddb639e778f4285f315a77fd07a09cadd947",
-        "493371ed145d2fb5f7fd82ebe36338518aa29e7d8cdcb6d9299678c2de4ad1e1"
+        "49eae949beb8c6eaf503cb54a07b8e428baaf30346b73fd05514401dcffe1a47",
+        "14883465cba4a104aa1f1a65419f26b5697dca41ef70d9861923706abec5f885"
     ],
     "extract_to": [
         "",
