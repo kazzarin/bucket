@@ -26,7 +26,7 @@
     "pre_uninstall": [
         "foreach ($savedFile in 'GameClients','ModuleCache','ServerList','settings') {",
         "    if (Test-Path \"$dir\\$savedFile.json\") {",
-        "        Copy-Item \"$dir\\$savedFile.json\" \"$persist_dir\\\" -Force",
+        "        Copy-Item \"$dir\\$savedFile.json\" \"$persist_dir\\\" -Force -ErrorAction SilentlyContinue",
         "    }",
         "}"
     ],
