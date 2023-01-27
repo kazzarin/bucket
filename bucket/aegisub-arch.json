@@ -1,17 +1,15 @@
 {
-    "version": "feature_08",
+    "version": "feature_09",
     "description": "A cross-platform advanced subtitle editor",
     "homepage": "https://github.com/arch1t3cht/Aegisub",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/arch1t3cht/Aegisub/releases/download/feature_08/Windows.MSVC.Release.-.portable.zip",
-            "hash": "e9dcecbd1118277ccb9344ae56652a3666c29d4db4964413bee98f89547d43d9"
+            "url": "https://github.com/arch1t3cht/Aegisub/releases/download/feature_09/Windows.MSVC.Release.-.portable.zip",
+            "hash": "9964c8b74b53204733a7f5183c05780af3b98ae984e03efa426932f87793f204"
         }
     },
-    "pre_install": [
-        "Expand-7zipArchive -Path \"$dir\\aegisub-portable-64.zip\" -ExtractDir 'aegisub-portable' -Removal"
-    ],
+    "pre_install": "Expand-7zipArchive -Path \"$dir\\aegisub-portable-64.zip\" -ExtractDir 'aegisub-portable' -Removal",
     "shortcuts": [
         [
             "aegisub.exe",
