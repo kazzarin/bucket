@@ -36,11 +36,11 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/pulsar-edit/pulsar/releases/download/v$version/Windows.Pulsar-$version-win.zip",
-                "hash": {
-                    "url": "$baseurl/SHA256SUMS.txt"
-                }
+                "url": "https://github.com/pulsar-edit/pulsar/releases/download/v$version/Windows.Pulsar-$version-win.zip"
             }
+        },
+        "hash": {
+            "url": "$baseurl/SHA256SUMS.txt"
         }
     }
 }
