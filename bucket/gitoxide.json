@@ -20,22 +20,9 @@
         "gix.exe"
     ],
     "checkver": {
-        "script": [
-            "try {",
-            "    $auth = Get-GitHubToken",
-            "    $head = @{}",
-            "    if($auth) { $head = @{'Authorization' = \"token $auth\"} }",
-            "    $url = 'https://api.github.com/repos/Byron/gitoxide/releases?per_page=100'",
-            "    $releases = $(Invoke-WebRequest -Headers $head $url).Content | ConvertFrom-Json",
-            "    if (!($releases.assets.name | Where-Object { $_ -match 'gitoxide-max-pure-v([\\d.]+)-i686-pc-windows-msvc\\.zip' })) {",
-            "        error \"Could not match version string in '$url'\"; break",
-            "    }",
-            "    $ver = [Version]::new($matches[1])",
-            "    Write-Output $ver",
-            "}",
-            "catch { error $_.Exception.Message; throw }"
-        ],
-        "regex": "([\\d.]+)"
+        "url": "https://api.github.com/repos/Byron/gitoxide/releases",
+        "jsonpath": "$..browser_download_url",
+        "regex": "gitoxide-max-pure-v([\\d.]+)-i686-pc-windows-msvc\\.zip"
     },
     "autoupdate": {
         "architecture": {
