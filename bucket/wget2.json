@@ -12,7 +12,7 @@
     "bin": "wget2.exe",
     "checkver": {
         "github": "https://github.com/rockdaboot/wget2",
-        "regex": "v([\\d.]+)(?:[\\s\\S]*)?\/files\/(\\d+)\/wget2\\.zip"
+        "regex": "(?s)v([\\d.]+).*?/files/(\\d+)/wget2\\.zip"
     },
     "autoupdate": {
         "architecture": {
