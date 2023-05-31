@@ -1,6 +1,6 @@
 {
     "version": "20230531",
-    "description": "Video player based on MPlayer/mplayer2 (builds by shinchiro)",
+    "description": "Video player based on MPlayer/mplayer2 (builds by shinchiro; AVX, nightly)",
     "homepage": "https://mpv.io",
     "license": "LGPL-2.1-or-later,GPL-2.0-or-later",
     "notes": [
