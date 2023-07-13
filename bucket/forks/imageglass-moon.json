@@ -1,0 +1,54 @@
+{
+    "version": "9.0.4.416",
+    "description": "A lightweight, versatile image viewer",
+    "homepage": "https://imageglass.org",
+    "license": "GPL-3.0-only",
+    "suggest": {
+        ".NET Desktop Runtime": "extras/windowsdesktop-runtime"
+    },
+    "notes": "Requires WebView2 to be installed: https://go.microsoft.com/fwlink/p/?LinkId=2124703",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/d2phap/ImageGlass/releases/download/9.0.4.416/ImageGlass_Moon_9.0.4.416_Beta-4_x64_net7.zip",
+            "hash": "sha1:1efc8419a4364709a9edaf60e51a2cc230ddcf9e",
+            "extract_dir": "ImageGlass_Moon_9.0.4.416_Beta-4_x64_net7"
+        }
+    },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\igconfig.json\")) {",
+        "    Add-Content \"$dir\\igconfig.json\" '{\"_Metadata\":{\"Description\":\"ImageGlass configuration file\",\"Version\":\"9.0\"},\"AutoUpdate\":\"0\"}' -Encoding Ascii",
+        "}"
+    ],
+    "bin": [
+        "ImageGlass.exe",
+        "igcmd.exe",
+        "igcmd10.exe"
+    ],
+    "shortcuts": [
+        [
+            "ImageGlass.exe",
+            "ImageGlass Moon"
+        ]
+    ],
+    "persist": [
+        "Themes",
+        "igconfig.json"
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/d2phap/ImageGlass/releases",
+        "jsonpath": "$[?(@.prerelease == true)]..['browser_download_url']",
+        "regex": "/ImageGlass_Moon_([\\d.]+)_(?<name>[\\w-]+)_x64"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/d2phap/ImageGlass/releases/download/$version/ImageGlass_Moon_$version_$matchName_x64_net7.zip",
+                "extract_dir": "ImageGlass_Moon_$version_$matchName_x64_net7"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/d2phap/ImageGlass/releases/tag/$version",
+            "regex": "(?s)$basename.*?$sha1"
+        }
+    }
+}
