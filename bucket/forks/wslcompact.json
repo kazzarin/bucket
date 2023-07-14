@@ -1,0 +1,16 @@
+{
+    "version": "8.7",
+    "description": "Safely compacts the size of the ever-growing WSL vhdx images.",
+    "homepage": "https://github.com/okibcn/wslcompact",
+    "license": "GPL-3.0-only",
+    "url": "https://github.com/okibcn/wslcompact/releases/download/8.7/WslCompact-v8.7.zip",
+    "hash": "003d53c78cf7d5fd9f102048de400eda37f406856a0d14df5ea9a72e79b3d2c2",
+    "extract_dir": "WslCompact",
+    "psmodule": {
+        "name": "wslcompact"
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/okibcn/wslcompact/releases/download/$version/WslCompact-v$version.zip"
+    }
+}
