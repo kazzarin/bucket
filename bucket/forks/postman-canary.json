@@ -1,0 +1,42 @@
+{
+    "version": "10.15.6-canary230706-1055",
+    "description": "Complete API development environment.",
+    "homepage": "https://www.postman.com",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.postman.com/legal/terms/"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://dl.pstmn.io/download/10.15.6-canary230706-1055/PostmanCanary-win64-10.15.6-canary230706-1055-Setup.exe#/dl.7z",
+            "hash": "sha1:856758ff49a5b87104cdcf76600314ce1f6ff9f6"
+        }
+    },
+    "installer": {
+        "script": [
+            "Expand-7zipArchive \"$dir\\PostmanCanary-$version-full.nupkg\" \"$dir\\app\" -ExtractDir 'lib\\net45' -Removal",
+            "'background.gif', 'RELEASES', 'setupIcon.ico' | ForEach-Object { Remove-Item \"$dir\\$_\" }"
+        ]
+    },
+    "shortcuts": [
+        [
+            "app/PostmanCanary.exe",
+            "Postman Canary"
+        ]
+    ],
+    "checkver": {
+        "url": "https://dl.pstmn.io/changelog?channel=canary&platform=win64",
+        "jsonpath": "$.changelog[0].name"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dl.pstmn.io/download/$version/PostmanCanary-win64-$version-Setup.exe#/dl.7z",
+                "hash": {
+                    "url": "https://dl.pstmn.io/RELEASES?platform=win64&channel=canary",
+                    "regex": "$basename.*?$sha1"
+                }
+            }
+        }
+    }
+}
