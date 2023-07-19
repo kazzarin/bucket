@@ -1,0 +1,41 @@
+{
+    "version": "2023.1.1.13",
+    "description": "The official IDE for Android development, which includes everything you need to build Android apps.",
+    "homepage": "https://developer.android.com/studio/preview",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://developer.android.com/studio/terms.html"
+    },
+    "suggest": {
+        "Android SDK": "android-clt"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2023.1.1.13/android-studio-2023.1.1.13-windows.zip",
+            "hash": "5a3353ec7fba583887508bbf863ee6f11a3a9f829dfd998733f2915bd523505c",
+            "shortcuts": [
+                [
+                    "bin\\studio64.exe",
+                    "Android Studio Beta"
+                ]
+            ]
+        }
+    },
+    "extract_dir": "android-studio",
+    "checkver": {
+        "url": "https://jb.gg/android-studio-releases-list.json",
+        "jsonpath": "$.content.item[?(@.channel == 'Canary')].version",
+        "regex": "([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/$version/android-studio-$version-windows.zip"
+            }
+        },
+        "hash": {
+            "url": "https://jb.gg/android-studio-releases-list.json",
+            "regex": "$url.*?$sha256"
+        }
+    }
+}
