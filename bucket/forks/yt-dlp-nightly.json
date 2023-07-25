@@ -5,8 +5,8 @@
     "license": "Unlicense",
     "suggest": {
         "ffmpeg": [
-            "ffmpeg-nightly",
-            "ffmpeg-yt-dlp"
+            "versions/ffmpeg-nightly",
+            "versions/ffmpeg-yt-dlp"
         ]
     },
     "architecture": {
