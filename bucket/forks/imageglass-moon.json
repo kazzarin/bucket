@@ -21,8 +21,7 @@
     ],
     "bin": [
         "ImageGlass.exe",
-        "igcmd.exe",
-        "igcmd10.exe"
+        "igcmd.exe"
     ],
     "shortcuts": [
         [
