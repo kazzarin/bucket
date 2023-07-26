@@ -4,7 +4,10 @@
 
 Personal bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
 
+Manifests modified from official or community buckets are contained in [`bucket/forks`](https://github.com/kazzarin/bucket/tree/master/bucket/forks).
+
 How do I install these manifests?
 ---------------------------------
 
-To add this bucket, run `scoop bucket add kazzarin https://github.com/kazzarin/bucket`. To install, do `scoop install <manifest>`.
+- To add this bucket, run `scoop bucket add kazzarin https://github.com/kazzarin/bucket`
+- To install an app, run `scoop install kazzarin/<manifest>`
