@@ -2,7 +2,7 @@
     "version": "20230805",
     "description": "Video player based on MPlayer/mplayer2 (builds by shinchiro; AVX, nightly)",
     "homepage": "https://mpv.io",
-    "license": "LGPL-2.1-or-later,GPL-2.0-or-later",
+    "license": "GPL-2.0-or-later OR LGPL-2.1-or-later",
     "notes": [
         "To set and unset file type associations and AutoPlay handlers, run '$dir\\installer\\mpv-install.bat' and '$dir\\installer\\mpv-uninstall.bat' as administrator, respectively.",
         "You can use Icaros ('nonportable/icaros-np') to enable thumbnails for all media types."

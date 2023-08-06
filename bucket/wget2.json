@@ -2,7 +2,7 @@
     "version": "2.0.1",
     "description": "The successor of GNU Wget, a file and recursive website downloader",
     "homepage": "https://github.com/rockdaboot/wget2",
-    "license": "GPL-3.0-only|LGPL-3.0-only",
+    "license": "GPL-3.0-or-later AND LGPL-3.0-or-later",
     "architecture": {
         "64bit": {
             "url": "https://github.com/rockdaboot/wget2/files/8785944/wget2.zip",

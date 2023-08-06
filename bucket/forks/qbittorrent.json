@@ -3,7 +3,7 @@
     "description": "Free and reliable P2P Bittorent client. (Qt6, libtorrent 2.x)",
     "homepage": "https://www.qbittorrent.org/",
     "license": {
-        "identifier": "GPL-2.0-only",
+        "identifier": "GPL-3.0-or-later",
         "url": "https://github.com/qbittorrent/qBittorrent/blob/master/COPYING"
     },
     "architecture": {
