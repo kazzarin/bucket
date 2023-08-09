@@ -1,5 +1,5 @@
 {
-    "version": "10.16.4-canary230725-1322",
+    "version": "10.16.5-canary230801-0730",
     "description": "Complete API development environment.",
     "homepage": "https://www.postman.com",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl.pstmn.io/download/10.16.4-canary230725-1322/PostmanCanary-win64-10.16.4-canary230725-1322-Setup.exe#/dl.7z",
-            "hash": "sha1:fe6f9586ed5dd5cbfc961eed2aff19677901d449"
+            "url": "https://dl.pstmn.io/download/10.16.5-canary230801-0730/PostmanCanary-win64-10.16.5-canary230801-0730-Setup.exe#/dl.7z",
+            "hash": "sha1:8f92f2781f5508985bee89d5356eee47bd398eda"
         }
     },
     "installer": {
