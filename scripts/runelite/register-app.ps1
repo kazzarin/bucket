@@ -4,7 +4,7 @@ if ($global -and (-not $is_admin)) {
 }
 
 $reg_root = if ($global) { [Microsoft.Win32.Registry]::LocalMachine } else { [Microsoft.Win32.Registry]::CurrentUser }
-$reg_path = 'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\RuneLite Launcher'
+$reg_path = 'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\RuneLite Launcher_is1'
 $reg = $reg_root.CreateSubKey($reg_path)
 
 $reg.SetValue("DisplayIcon", "$dir\\RuneLite.exe", [Microsoft.Win32.RegistryValueKind]::String)
