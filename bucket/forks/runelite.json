@@ -35,6 +35,16 @@
         [
             "RuneLite.exe",
             "RuneLite"
+        ],
+        [
+            "RuneLite.exe",
+            "RuneLite (configure)",
+            "--configure"
+        ],
+        [
+            "RuneLite.exe",
+            "RuneLite (safe mode)",
+            "--safe-mode"
         ]
     ],
     "pre_uninstall": [
