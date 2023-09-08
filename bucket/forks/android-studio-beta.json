@@ -1,5 +1,5 @@
 {
-    "version": "2023.1.1.18",
+    "version": "2023.1.1.19",
     "description": "The official IDE for Android development, which includes everything you need to build Android apps.",
     "homepage": "https://developer.android.com/studio/preview",
     "license": {
@@ -11,8 +11,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2023.1.1.18/android-studio-2023.1.1.18-windows.zip",
-            "hash": "4bf82aa0a7aef9a5fa226c2be15b9b820ece3c725b3cbb0d5a7c8ee0fc6ea39f",
+            "url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2023.1.1.19/android-studio-2023.1.1.19-windows.zip",
+            "hash": "5957ec0a519383af6a60a01257aa54f5bb383ba8d75c854acd90d2717eadbbde",
             "shortcuts": [
                 [
                     "bin\\studio64.exe",
