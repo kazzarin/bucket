@@ -1,0 +1,12 @@
+{
+    "version": "2.9",
+    "description": "Convert files to the Kindle format.",
+    "homepage": "https://wiki.mobileread.com/wiki/KindleGen",
+    "license": "Unknown",
+    "url": "https://d2bzeorukaqrvt.cloudfront.net/KindleComicCreatorInstall.exe#/dl.7z",
+    "hash": "b3b267aa2d9282cf70de1af3c2c5421fb163856b412ef4d571e3bda3699864e1",
+    "installer": {
+        "script": "Get-ChildItem -Path \"$dir\" | Where-Object { $_.Name -ne 'kindlegen.exe' } | Remove-Item -Recurse -Force"
+    },
+    "bin": "kindlegen.exe"
+}
