@@ -3,6 +3,10 @@
     "description": "Comic and manga converter for ebook readers.",
     "homepage": "https://github.com/ciromattia/kcc",
     "license": "ISC",
+    "notes": "KindleGen is required for MOBI generation",
+    "suggest": {
+        "kindlegen": "kazzarin/kindlegen"
+    },
     "architecture": {
         "64bit": {
             "url": "https://github.com/ciromattia/kcc/releases/download/v5.6.3/kcc_5.6.3.exe#/kcc.exe",
