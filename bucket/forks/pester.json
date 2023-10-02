@@ -1,0 +1,18 @@
+{
+    "version": "5.5.0",
+    "description": "Pester is a test and mock framework for PowerShell.",
+    "homepage": "https://pester.dev",
+    "license": "Apache-2.0",
+    "url": "https://globalcdn.nuget.org/packages/pester.5.5.0.nupkg",
+    "hash": "805c1fe7187750b36ed8e2f751f3d1ab49b343f003c6ae1c303d8f02dc7d074e",
+    "extract_dir": "tools",
+    "psmodule": {
+        "name": "Pester"
+    },
+    "checkver": {
+        "github": "https://github.com/pester/Pester"
+    },
+    "autoupdate": {
+        "url": "https://globalcdn.nuget.org/packages/pester.$version.nupkg"
+    }
+}
