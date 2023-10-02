@@ -5,10 +5,11 @@
     "license": "GPL-2.0-or-later OR LGPL-2.1-or-later",
     "notes": [
         "To set and unset file type associations and AutoPlay handlers, run '$dir\\installer\\mpv-install.bat' and '$dir\\installer\\mpv-uninstall.bat' as administrator, respectively.",
-        "You can use Icaros ('nonportable/icaros-np') to enable thumbnails for all media types."
+        "Optionally, you can install Icaros to enable thumbnails for all media types."
     ],
     "suggest": {
-        "yt-dlp": "main/yt-dlp"
+        "yt-dlp": "main/yt-dlp",
+        "Icaros": "kazzarin/icaros-np"
     },
     "architecture": {
         "64bit": {
