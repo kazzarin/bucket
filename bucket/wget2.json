@@ -9,16 +9,5 @@
             "hash": "65a6a5c33f7f9a647d33ac10a5521bf5fb8930330daa140acb0fd129df84cdb2"
         }
     },
-    "bin": "wget2.exe",
-    "checkver": {
-        "github": "https://github.com/rockdaboot/wget2",
-        "regex": "(?s)v([\\d.]+).*?/files/(\\d+)/wget2\\.zip"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/rockdaboot/wget2/files/$match2/wget2.zip"
-            }
-        }
-    }
+    "bin": "wget2.exe"
 }
