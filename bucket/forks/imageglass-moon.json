@@ -1,5 +1,5 @@
 {
-    "version": "9.0.5.726",
+    "version": "9.0.6.1008",
     "description": "A lightweight, versatile image viewer",
     "homepage": "https://imageglass.org",
     "license": "GPL-3.0-only",
@@ -10,9 +10,9 @@
     "notes": "Requires WebView2 to be installed: https://go.microsoft.com/fwlink/p/?LinkId=2124703",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/d2phap/ImageGlass/releases/download/9.0.5.726/ImageGlass_Moon_9.0.5.726_Beta-5_x64_net7.zip",
-            "hash": "sha1:1545d69391f99686e0189cac0549b891c1d14ed5",
-            "extract_dir": "ImageGlass_Moon_9.0.5.726_Beta-5_x64_net7"
+            "url": "https://github.com/d2phap/ImageGlass/releases/download/9.0.6.1008/ImageGlass_Moon_9.0.6.1008_RC_x64_net7.zip",
+            "hash": "sha1:2ae9fb5f94be4a293a241fdd3c6d8e15a1504b33",
+            "extract_dir": "ImageGlass_Moon_9.0.6.1008_RC_x64_net7"
         }
     },
     "pre_install": [
