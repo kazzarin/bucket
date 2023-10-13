@@ -1,0 +1,57 @@
+{
+    "version": "9.4.0.0p1",
+    "description": "The premier connectivity tool for remote login with the SSH protocol. (Microsoft beta build)",
+    "homepage": "https://www.openssh.com",
+    "license": "SSH-OpenSSH",
+    "notes": [
+        "Windows 10 or higher includes a stable build of OpenSSH in the system itself, hence it is recommended to use the system OpenSSH there.",
+        "Run 'sudo $dir\\install-sshd.ps1' to install sshd and ssh-agent as a service.",
+        "Run 'sudo $dir\\uninstall-sshd.ps1' to uninstall the services."
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/PowerShell/Win32-OpenSSH/releases/download/v9.4.0.0p1-Beta/OpenSSH-Win64.zip",
+            "hash": "580231dc77c96acdbc84f3c99e5c780cd0d8a06a6edfe6fecfe3d07664159a78",
+            "extract_dir": "OpenSSH-Win64"
+        },
+        "32bit": {
+            "url": "https://github.com/PowerShell/Win32-OpenSSH/releases/download/v9.4.0.0p1-Beta/OpenSSH-Win32.zip",
+            "hash": "ca7cab368dfe415e1b8b90e0a4f8c2d129a39c86a4f1eafe980c3a2d19fdae98",
+            "extract_dir": "OpenSSH-Win32"
+        },
+        "arm64": {
+            "url": "https://github.com/PowerShell/Win32-OpenSSH/releases/download/v9.4.0.0p1-Beta/OpenSSH-ARM64.zip",
+            "hash": "ba66ea8a47ad890f608358423efd49bacc2c6135b8fc67254007b2c38de70a3f",
+            "extract_dir": "OpenSSH-ARM64"
+        }
+    },
+    "bin": [
+        "scp.exe",
+        "sftp.exe",
+        "sftp-server.exe",
+        "ssh.exe",
+        "ssh-add.exe",
+        "ssh-agent.exe",
+        "ssh-keygen.exe",
+        "ssh-keyscan.exe",
+        "ssh-shellhost.exe",
+        "sshd.exe"
+    ],
+    "checkver": {
+        "github": "https://github.com/PowerShell/Win32-OpenSSH",
+        "regex": "tag/v([\\d.]+p\\d)-Beta"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/PowerShell/Win32-OpenSSH/releases/download/v$version-Beta/OpenSSH-Win64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/PowerShell/Win32-OpenSSH/releases/download/v$version-Beta/OpenSSH-Win32.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/PowerShell/Win32-OpenSSH/releases/download/v$version-Beta/OpenSSH-ARM64.zip"
+            }
+        }
+    }
+}
