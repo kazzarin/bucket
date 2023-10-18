@@ -17,10 +17,6 @@
             "url": "https://az764295.vo.msecnd.net/insider/0c36b92c82064882a228487040187cfc13669c0f/VSCode-win32-x64-1.84.0-insider.zip",
             "hash": "84e662e62e460bc6a39f75faf6d39334189febc272d793b0c1b4ae7cb51b6c49"
         },
-        "32bit": {
-            "url": "https://az764295.vo.msecnd.net/insider/0c36b92c82064882a228487040187cfc13669c0f/VSCode-win32-ia32-1.84.0-insider.zip",
-            "hash": "08878b83355b78174eb0d631af8e99b610a3c5661ff52d8e3ff1c76181d6eed8"
-        },
         "arm64": {
             "url": "https://az764295.vo.msecnd.net/insider/0c36b92c82064882a228487040187cfc13669c0f/VSCode-win32-arm64-1.84.0-insider.zip",
             "hash": "038d3fda42ad5c1432e0dd312f8f18318a23c2da2d6c2c0e63037362d5a4861f"
@@ -76,9 +72,6 @@
         "architecture": {
             "64bit": {
                 "url": "https://az764295.vo.msecnd.net/insider/$matchCommit/VSCode-win32-x64-$matchProduct.zip"
-            },
-            "32bit": {
-                "url": "https://az764295.vo.msecnd.net/insider/$matchCommit/VSCode-win32-ia32-$matchProduct.zip"
             },
             "arm64": {
                 "url": "https://az764295.vo.msecnd.net/insider/$matchCommit/VSCode-win32-arm64-$matchProduct.zip"
