@@ -1,7 +1,7 @@
 {
     "version": "21.0.1",
-    "description": "High-performance, embeddable, polyglot Virtual Machine for JVM-langs (Java, Scala, Kotlin), JavaScript/NodeJS, Python, Ruby, R, and LLVM-langs (C, C++, Rust)",
-    "homepage": "https://www.graalvm.org/",
+    "description": "GraalVM is a high performance JDK that speeds up the performance of Java and JVM-based applications and simplifies the building and running of Java cloud native services.",
+    "homepage": "https://www.oracle.com/java/graalvm/",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.oracle.com/downloads/licenses/graal-free-license.html"
@@ -21,7 +21,7 @@
     "checkver": {
         "script": [
             "$releases = 'https://docs.oracle.com/en/graalvm/'",
-            "$verRegex = 'Oracle GraalVM for JDK ([\\d.-]+)'",
+            "$verRegex = 'Oracle GraalVM for JDK ([\\d.]+)'",
             "$relRes = $(Invoke-WebRequest $releases).Content",
             "$relRes -match $verRegex",
             "$major = $matches[1]",
@@ -31,7 +31,7 @@
             "$latest = \"${version}-${major}\"",
             "Write-Output $latest"
         ],
-        "regex": "([\\d.-]+)-(?<jdk>[\\d.]+)"
+        "regex": "([\\d.]+)-(?<jdk>\\d+)"
     },
     "autoupdate": {
         "architecture": {
