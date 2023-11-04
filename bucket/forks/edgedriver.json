@@ -22,7 +22,7 @@
     },
     "bin": "msedgedriver.exe",
     "checkver": {
-        "regex": "(?s)Current general public release channel\\.</p>.*?Version: ([\\d.]+)"
+        "regex": "(?s)x64.*?stable channel,.*?version ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
