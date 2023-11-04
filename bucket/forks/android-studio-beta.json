@@ -1,6 +1,6 @@
 {
     "version": "2023.1.1.22",
-    "description": "The official IDE for Android development, which includes everything you need to build Android apps.",
+    "description": "The official IDE for Android development, which includes everything you need to build Android apps. (beta)",
     "homepage": "https://developer.android.com/studio/preview",
     "license": {
         "identifier": "Freeware",

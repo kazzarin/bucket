@@ -1,9 +1,8 @@
 {
     "version": "6.29.0",
-    "description": "Powerful and easy to use e-book manager",
+    "description": "Calibre is an e-book manager that can view, convert, edit and catalog e-books in all of the major e-book formats. (nonportable)",
     "homepage": "https://calibre-ebook.com",
     "license": "GPL-3.0-only",
-    "notes": "Calibre drops support for 32-bit CPUs after v6.0.0, if you are running a 32-bit system, please install calibre-normal5 from Versions bucket.",
     "architecture": {
         "64bit": {
             "url": "https://github.com/kovidgoyal/calibre/releases/download/v6.29.0/calibre-64bit-6.29.0.msi",

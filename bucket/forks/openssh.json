@@ -1,6 +1,6 @@
 {
     "version": "9.4.0.0p1",
-    "description": "The premier connectivity tool for remote login with the SSH protocol. (Microsoft beta build)",
+    "description": "The premier connectivity tool for remote login with the SSH protocol. (prerelease)",
     "homepage": "https://www.openssh.com",
     "license": "SSH-OpenSSH",
     "notes": [

@@ -1,6 +1,6 @@
 {
     "version": "1.85.0-insider-1699024408292",
-    "description": "Visual Studio Code is a lightweight but powerful source code editor (Insiders, Portable Edition).",
+    "description": "Visual Studio Code is a lightweight but powerful source code editor. (Insiders; portable)",
     "homepage": "https://code.visualstudio.com/insiders/",
     "license": {
         "identifier": "Freeware",

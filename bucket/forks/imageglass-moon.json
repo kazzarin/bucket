@@ -1,6 +1,6 @@
 {
     "version": "9.0.6.1008",
-    "description": "A lightweight, versatile image viewer",
+    "description": "A lightweight, versatile image viewer. (prerelease)",
     "homepage": "https://imageglass.org",
     "license": "GPL-3.0-only",
     "suggest": {

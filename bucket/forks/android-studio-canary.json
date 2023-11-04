@@ -1,6 +1,6 @@
 {
     "version": "2023.2.1.11",
-    "description": "The official IDE for Android development, which includes everything you need to build Android apps.",
+    "description": "The official IDE for Android development, which includes everything you need to build Android apps. (canary)",
     "homepage": "https://developer.android.com/studio/preview",
     "license": {
         "identifier": "Freeware",
