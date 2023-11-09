@@ -1,6 +1,6 @@
 {
     "version": "2023.11.07.231015",
-    "description": "A youtube-dl fork with additional features and fixes. (nightly)",
+    "description": "A youtube-dl fork with additional features and fixes (Nightly)",
     "homepage": "https://github.com/yt-dlp/yt-dlp-nightly-builds",
     "license": "Unlicense",
     "suggest": {

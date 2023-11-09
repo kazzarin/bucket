@@ -1,6 +1,6 @@
 {
     "version": "10.19.15-canary231101-0730",
-    "description": "Complete API development environment. (canary)",
+    "description": "Postman is an API platform for building and using APIs (Canary)",
     "homepage": "https://www.postman.com",
     "license": {
         "identifier": "Freeware",

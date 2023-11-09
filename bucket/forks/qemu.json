@@ -1,6 +1,6 @@
 {
     "version": "8.1.0",
-    "description": "A generic and open source machine emulator and virtualizer. (prerelease)",
+    "description": "A generic and open source machine emulator and virtualizer (Prerelease)",
     "homepage": "https://qemu.weilnetz.de/",
     "license": "GPL-2.0-only",
     "architecture": {

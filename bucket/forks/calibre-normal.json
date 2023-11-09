@@ -1,6 +1,6 @@
 {
     "version": "6.29.0",
-    "description": "Calibre is an e-book manager that can view, convert, edit and catalog e-books in all of the major e-book formats. (nonportable)",
+    "description": "Calibre is an e-book manager that can view, convert, edit and catalog e-books in all of the major e-book formats (Nonportable)",
     "homepage": "https://calibre-ebook.com",
     "license": "GPL-3.0-only",
     "architecture": {
