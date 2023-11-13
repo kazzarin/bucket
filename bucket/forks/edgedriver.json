@@ -22,7 +22,7 @@
     },
     "bin": "msedgedriver.exe",
     "checkver": {
-        "regex": "(?s)x64.*?stable channel,.*?version ([\\d.]+)"
+        "regex": "(?s)Stable Channel.*?Version.*?([\\d.]+)/edgedriver_win64"
     },
     "autoupdate": {
         "architecture": {
