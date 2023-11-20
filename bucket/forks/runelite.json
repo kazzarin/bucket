@@ -1,21 +1,21 @@
 {
-    "version": "2.6.9",
+    "version": "2.6.10",
     "description": "An open source Old School RuneScape client",
     "homepage": "https://runelite.net",
     "license": "BSD-2-Clause",
     "notes": "Allow the Jagex Launcher to find RuneLite by running the following: \"$dir\\register-app.ps1\"",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/runelite/launcher/releases/download/2.6.9/RuneLiteSetup.exe#/dl.7z",
-            "hash": "6b4991cb83fb8631b89fd0e46b14121e53e7088ec8def7962e1dad3afaa26720"
+            "url": "https://github.com/runelite/launcher/releases/download/2.6.10/RuneLiteSetup.exe#/dl.7z",
+            "hash": "837370201e436f04cf94972757e18c294b05c30fd9d39aa0dd50513df6355af6"
         },
         "32bit": {
-            "url": "https://github.com/runelite/launcher/releases/download/2.6.9/RuneLiteSetup32.exe#/dl.7z",
-            "hash": "760fc22eb43880e80157f1deaab82c68d760c17ef4bad5ba897da5070b4375ea"
+            "url": "https://github.com/runelite/launcher/releases/download/2.6.10/RuneLiteSetup32.exe#/dl.7z",
+            "hash": "4b3293e69c7e82e91be85c71e0d4eab072222aa3e46c01d2a52789aac355c604"
         },
         "arm64": {
-            "url": "https://github.com/runelite/launcher/releases/download/2.6.9/RuneLiteSetupAArch64.exe#/dl.7z",
-            "hash": "7f5ca46f297d40baa68a1f24e5583866f5137ba9f4d4f0ca84b06ddece55f0d5"
+            "url": "https://github.com/runelite/launcher/releases/download/2.6.10/RuneLiteSetupAArch64.exe#/dl.7z",
+            "hash": "e2bc488c8faa927e35220d4c38bd87f02c604e7d5d678735e2437132e6918b31"
         }
     },
     "innosetup": true,
