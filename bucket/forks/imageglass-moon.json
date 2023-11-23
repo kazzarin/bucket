@@ -10,9 +10,14 @@
     "notes": "Requires WebView2 to be installed: https://go.microsoft.com/fwlink/p/?LinkId=2124703",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/d2phap/ImageGlass/releases/download/9.0.6.1008/ImageGlass_Moon_9.0.6.1008_RC_x64_net7.zip",
-            "hash": "sha1:2ae9fb5f94be4a293a241fdd3c6d8e15a1504b33",
-            "extract_dir": "ImageGlass_Moon_9.0.6.1008_RC_x64_net7"
+            "url": "https://github.com/d2phap/ImageGlass/releases/download/9.0.6.1008/ImageGlass_Moon_9.0.6.1008_RC_x64_net8.zip",
+            "hash": "sha1:8670e00c18780ad46f31e5587702353e3f8535cd",
+            "extract_dir": "ImageGlass_Moon_9.0.6.1008_RC_x64_net8"
+        },
+        "arm64": {
+            "url": "https://github.com/d2phap/ImageGlass/releases/download/9.0.6.1008/ImageGlass_Moon_9.0.6.1008_RC_arm64_net8.zip",
+            "hash": "sha1:b71c540a5378994b6fee789052e26c5c07c18b9d",
+            "extract_dir": "ImageGlass_Moon_9.0.6.1008_RC_arm64_net8"
         }
     },
     "pre_install": [
@@ -42,8 +47,12 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/d2phap/ImageGlass/releases/download/$version/ImageGlass_Moon_$version_$matchName_x64_net7.zip",
-                "extract_dir": "ImageGlass_Moon_$version_$matchName_x64_net7"
+                "url": "https://github.com/d2phap/ImageGlass/releases/download/$version/ImageGlass_Moon_$version_$matchName_x64_net8.zip",
+                "extract_dir": "ImageGlass_Moon_$version_$matchName_x64_net8"
+            },
+            "arm64": {
+                "url": "https://github.com/d2phap/ImageGlass/releases/download/$version/ImageGlass_Moon_$version_$matchName_arm64_net8.zip",
+                "extract_dir": "ImageGlass_Moon_$version_$matchName_arm64_net8"
             }
         },
         "hash": {
