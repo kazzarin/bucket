@@ -1,12 +1,12 @@
 {
-    "version": "7.0.0",
+    "version": "7.1.0",
     "description": "Calibre is an e-book manager that can view, convert, edit and catalog e-books in all of the major e-book formats (Nonportable)",
     "homepage": "https://calibre-ebook.com",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kovidgoyal/calibre/releases/download/v7.0.0/calibre-64bit-7.0.0.msi",
-            "hash": "sha512:862e76a93e4b6d1ab810375374c9d7cd4828c326134816acde6568153a413c444367b16bebb9f9aabb10f93698f4e476611f54d8db77a2c11456d91a9a5759cb",
+            "url": "https://github.com/kovidgoyal/calibre/releases/download/v7.1.0/calibre-64bit-7.1.0.msi",
+            "hash": "sha512:ff64b2097aefeeec7deb76157d25ebd690a6c3c913313bfac366e9e42e57ff9690787241775df2d799c63f090b2e1e5d996cd9a9595097fc89fae63e1b47d2b6",
             "extract_dir": "PFiles64\\Calibre2"
         }
     },
