@@ -7,7 +7,11 @@
         ".NET Desktop Runtime": "extras/windowsdesktop-runtime",
         "exifglass": "kazzarin/exifglass"
     },
-    "notes": "Requires WebView2 to be installed: https://go.microsoft.com/fwlink/p/?LinkId=2124703",
+    "notes": [
+        "Requires WebView2 to be installed: https://go.microsoft.com/fwlink/p/?LinkId=2124703",
+        "Config has moved to '$dir\\igconfig.json' in 9.x; settings are not migrated from 8.x",
+        "Remove all themes located in '$persist_dir\\Themes' prior to upgrading to 9.x"
+    ],
     "architecture": {
         "64bit": {
             "url": "https://github.com/d2phap/ImageGlass/releases/download/9.0.7.1125/ImageGlass_9.0.7.1125_x64.zip",
@@ -22,7 +26,7 @@
     },
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\igconfig.json\")) {",
-        "    Add-Content \"$dir\\igconfig.json\" '{}' -Encoding utf8",
+        "    Add-Content \"$dir\\igconfig.json\" '{\"_Metadata\":{\"Description\":\"ImageGlass configuration file\",\"Version\":\"9.0\"},\"AutoUpdate\":\"0\"}' -Encoding utf8",
         "}"
     ],
     "bin": [
@@ -35,7 +39,10 @@
             "ImageGlass"
         ]
     ],
-    "persist": "igconfig.json",
+    "persist": [
+        "Themes",
+        "igconfig.json"
+    ],
     "checkver": {
         "github": "https://github.com/d2phap/ImageGlass"
     },
