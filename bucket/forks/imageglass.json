@@ -1,0 +1,57 @@
+{
+    "version": "9.0.7.1125",
+    "description": "A lightweight, versatile image viewer",
+    "homepage": "https://imageglass.org",
+    "license": "GPL-3.0-only",
+    "suggest": {
+        ".NET Desktop Runtime": "extras/windowsdesktop-runtime",
+        "exifglass": "kazzarin/exifglass"
+    },
+    "notes": "Requires WebView2 to be installed: https://go.microsoft.com/fwlink/p/?LinkId=2124703",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/d2phap/ImageGlass/releases/download/9.0.7.1125/ImageGlass_9.0.7.1125_x64.zip",
+            "hash": "e5a40d616d1f37d4a4bdbc5d8d09aa5c88f84ade36b64c7c2a219f19f6d44030",
+            "extract_dir": "ImageGlass_9.0.7.1125_x64"
+        },
+        "arm64": {
+            "url": "https://github.com/d2phap/ImageGlass/releases/download/9.0.7.1125/ImageGlass_9.0.7.1125_arm64.zip",
+            "hash": "f2706c50d08fc5c916ed7834231b995f2ecc482e9a7dd880031f67308e75aabe",
+            "extract_dir": "ImageGlass_9.0.7.1125_arm64"
+        }
+    },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\igconfig.json\")) {",
+        "    Add-Content \"$dir\\igconfig.json\" '{\"_Metadata\":{\"Description\":\"ImageGlass configuration file\",\"Version\":\"9.0\"},\"AutoUpdate\":\"0\"}' -Encoding Ascii",
+        "}"
+    ],
+    "bin": [
+        "ImageGlass.exe",
+        "igcmd.exe"
+    ],
+    "shortcuts": [
+        [
+            "ImageGlass.exe",
+            "ImageGlass"
+        ]
+    ],
+    "persist": [
+        "Themes",
+        "igconfig.json"
+    ],
+    "checkver": {
+        "github": "https://github.com/d2phap/ImageGlass"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/d2phap/ImageGlass/releases/download/$version/ImageGlass_$version_x64.zip",
+                "extract_dir": "ImageGlass_$version_x64"
+            },
+            "arm64": {
+                "url": "https://github.com/d2phap/ImageGlass/releases/download/$version/ImageGlass_$version_arm64.zip",
+                "extract_dir": "ImageGlass_$version_arm64"
+            }
+        }
+    }
+}
