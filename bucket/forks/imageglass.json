@@ -22,7 +22,7 @@
     },
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\igconfig.json\")) {",
-        "    Add-Content \"$dir\\igconfig.json\" '{\"_Metadata\":{\"Description\":\"ImageGlass configuration file\",\"Version\":\"9.0\"},\"AutoUpdate\":\"0\"}' -Encoding Ascii",
+        "    Add-Content \"$dir\\igconfig.json\" '{}' -Encoding utf8",
         "}"
     ],
     "bin": [
