@@ -35,10 +35,7 @@
             "ImageGlass"
         ]
     ],
-    "persist": [
-        "Themes",
-        "igconfig.json"
-    ],
+    "persist": "igconfig.json",
     "checkver": {
         "github": "https://github.com/d2phap/ImageGlass"
     },
