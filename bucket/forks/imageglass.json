@@ -10,7 +10,7 @@
     "notes": [
         "Requires WebView2 to be installed: https://go.microsoft.com/fwlink/p/?LinkId=2124703",
         "Config has moved to '$dir\\igconfig.json' in 9.x; settings are not migrated from 8.x",
-        "Remove all themes located in '$persist_dir\\Themes' prior to upgrading to 9.x"
+        "Delete '$persist_dir\\Themes' prior to upgrading to 9.x to resolve theme incompatibility"
     ],
     "architecture": {
         "64bit": {
