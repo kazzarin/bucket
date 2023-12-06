@@ -1,18 +1,18 @@
 {
-    "version": "0.31.1",
+    "version": "0.32.0",
     "description": "An idiomatic, lean, fast & safe pure Rust implementation of Git",
     "homepage": "https://github.com/Byron/gitoxide",
     "license": "Apache-2.0 OR MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Byron/gitoxide/releases/download/v0.31.1/gitoxide-max-pure-v0.31.1-x86_64-pc-windows-msvc.zip",
-            "hash": "096d5c74ef8897647f10e2f4ca98a183735c98caf5f75571c2ece8fdd9eaf76a",
-            "extract_dir": "gitoxide-max-pure-v0.31.1-x86_64-pc-windows-msvc"
+            "url": "https://github.com/Byron/gitoxide/releases/download/v0.32.0/gitoxide-max-pure-v0.32.0-x86_64-pc-windows-msvc.zip",
+            "hash": "7b5c777ab7c92e344d2cb8de2dd41372ed6e48f760304f8afaf9166df0b6f86f",
+            "extract_dir": "gitoxide-max-pure-v0.32.0-x86_64-pc-windows-msvc"
         },
         "32bit": {
-            "url": "https://github.com/Byron/gitoxide/releases/download/v0.31.1/gitoxide-max-pure-v0.31.1-i686-pc-windows-msvc.zip",
-            "hash": "0b9e2dcd8e24693edc697825687bfb74762f18d4f922fc5558687046c5f63b77",
-            "extract_dir": "gitoxide-max-pure-v0.31.1-i686-pc-windows-msvc"
+            "url": "https://github.com/Byron/gitoxide/releases/download/v0.32.0/gitoxide-max-pure-v0.32.0-i686-pc-windows-msvc.zip",
+            "hash": "0feb9a6140f4e5db6f74d22a72734437a6fec362c40721bef44a57cf284a482c",
+            "extract_dir": "gitoxide-max-pure-v0.32.0-i686-pc-windows-msvc"
         }
     },
     "bin": [
