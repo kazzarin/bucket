@@ -23,7 +23,7 @@
     "bin": "yt-dlp.exe",
     "persist": [
         "yt-dlp.conf",
-        "ytdlp_plugins"
+        "yt-dlp-plugins"
     ],
     "checkver": {
         "github": "https://github.com/yt-dlp/yt-dlp-nightly-builds"
