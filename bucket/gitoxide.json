@@ -19,11 +19,7 @@
         "ein.exe",
         "gix.exe"
     ],
-    "checkver": {
-        "url": "https://api.github.com/repos/Byron/gitoxide/releases",
-        "jsonpath": "$..browser_download_url",
-        "regex": "gitoxide-max-pure-v([\\d.]+)-i686-pc-windows-msvc\\.zip"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
