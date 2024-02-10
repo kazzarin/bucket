@@ -14,7 +14,7 @@
             "extract_dir": "Locale_Remulator.1.5.3-beta.1"
         }
     },
-    "pre_install": "if (!(Test-Path \"$persist_dir\\LEConfig.xml\")) { New-Item \"$dir\\LEConfig.xml\" | Out-Null }",
+    "pre_install": "if (!(Test-Path \"$persist_dir\\LRConfig.xml\")) { New-Item \"$dir\\LRConfig.xml\" | Out-Null }",
     "bin": [
         "LREditor.exe",
         "LRProc.exe",
