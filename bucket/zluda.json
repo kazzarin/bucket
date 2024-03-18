@@ -1,0 +1,23 @@
+{
+    "version": "3",
+    "description": "ZLUDA lets you run unmodified CUDA applications with near-native performance on AMD GPUs",
+    "homepage": "https://github.com/vosen/ZLUDA",
+    "license": "Apache-2.0 OR MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/vosen/ZLUDA/releases/download/v3/zluda-3-windows.zip",
+            "hash": "8c06c8a80000bdf1f3ce2b58c5a577a7b84393505b5aedbdbd8cc940b64820dc"
+        }
+    },
+    "extract_dir": "zluda",
+    "bin": "zluda.exe",
+    "env_add_path": ".",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/vosen/ZLUDA/releases/download/v$version/zluda-$version-windows.zip"
+            }
+        }
+    }
+}
