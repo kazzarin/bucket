@@ -1,6 +1,6 @@
 {
     "version": "2024.03.20.232704",
-    "description": "A youtube-dl fork with additional features and fixes (Nightly)",
+    "description": "yt-dlp is a feature-rich command-line audio/video downloader (Nightly)",
     "homepage": "https://github.com/yt-dlp/yt-dlp",
     "license": "Unlicense",
     "suggest": {
