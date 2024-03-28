@@ -1,12 +1,12 @@
 {
-    "version": "8.2.0",
+    "version": "9.0.0-rc1",
     "description": "A generic and open source machine emulator and virtualizer (Prerelease)",
     "homepage": "https://qemu.weilnetz.de/",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://qemu.weilnetz.de/w64/2023/qemu-w64-setup-20231224.exe#/dl.7z_",
-            "hash": "sha512:a54fe995a712f47f1ffeacb2be302d61684633958a8ccc1dc686773ff910658ad7e52d15d6122ac6b7887ef42b1b63697719082d2f37204bf0965fb7f67820fd"
+            "url": "https://qemu.weilnetz.de/w64/2024/qemu-w64-setup-20240328.exe#/dl.7z_",
+            "hash": "sha512:695fc76f90e300122c1418ff1e402e08644820de7938ddb6e648b82626e2307efa75b5610968f92887a7f481f3134d8c8436ccc6de95978f886db7da9e66141c"
         }
     },
     "pre_install": "Expand-7zipArchive \"$dir\\dl.7z_\" \"$dir\" -Removal -Switches '-xr!*.exe.nsis -x!$PLUGINSDIR'",
