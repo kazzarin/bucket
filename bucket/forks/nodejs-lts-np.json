@@ -1,0 +1,53 @@
+{
+    "version": "20.12.0",
+    "description": "An asynchronous event driven JavaScript runtime designed to build scalable network applications (LTS; Nonportable)",
+    "homepage": "https://nodejs.org",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://nodejs.org/dist/v20.12.0/node-v20.12.0-win-x64.7z",
+            "hash": "2f623dac976071ef7a9cbf26081fd21b07349d234287bc863d690d4cf2adbe01",
+            "extract_dir": "node-v20.12.0-win-x64"
+        },
+        "32bit": {
+            "url": "https://nodejs.org/dist/v20.12.0/node-v20.12.0-win-x86.7z",
+            "hash": "47e57d5409b6dba0ab72868fc6691345ded1a54c3f6b0d724410bfdcb976d383",
+            "extract_dir": "node-v20.12.0-win-x86"
+        },
+        "arm64": {
+            "url": "https://nodejs.org/dist/v20.12.0/node-v20.12.0-win-arm64.7z",
+            "hash": "96690fd6580aa8df8883ae7283c5702d7774441d7ba6b761901047d51760017d",
+            "extract_dir": "node-v20.12.0-win-arm64"
+        }
+    },
+    "bin": [
+        "corepack.cmd",
+        "node.exe",
+        "npm.cmd",
+        "npx.cmd"
+    ],
+    "checkver": {
+        "url": "https://nodejs.org/dist/index.json",
+        "jsonpath": "$[?(@.lts != false)].version",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://nodejs.org/dist/v$version/node-v$version-win-x64.7z",
+                "extract_dir": "node-v$version-win-x64"
+            },
+            "32bit": {
+                "url": "https://nodejs.org/dist/v$version/node-v$version-win-x86.7z",
+                "extract_dir": "node-v$version-win-x86"
+            },
+            "arm64": {
+                "url": "https://nodejs.org/dist/v$version/node-v$version-win-arm64.7z",
+                "extract_dir": "node-v$version-win-arm64"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHASUMS256.txt"
+        }
+    }
+}
