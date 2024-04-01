@@ -1,0 +1,32 @@
+{
+    "version": "0.10.0",
+    "description": "Retrieve files over IPFS and save them locally",
+    "homepage": "https://github.com/ipfs/ipget",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://dist.ipfs.tech/ipget/v0.10.0/ipget_v0.10.0_windows-amd64.zip",
+            "hash": "sha512:7e056bbd67c817e885e0129bd93e54ae1d00972e2f4631fcc518835a205d42abce2f89d1862f8f8b715037d8faa45be125d26b9f4565b8cec1a996c4acd227b5"
+        },
+        "32bit": {
+            "url": "https://dist.ipfs.tech/ipget/v0.10.0/ipget_v0.10.0_windows-386.zip",
+            "hash": "sha512:6072967614671eb3ba9849a3a53444b670fd80519e01a310f52bec0e3d36519ce802c6edb72d2591c5184e2cbd929c729dafbe4bc53ad1931e1013cd4be9dfd1"
+        }
+    },
+    "extract_dir": "ipget",
+    "bin": "ipget.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dist.ipfs.tech/ipget/v$version/ipget_v$version_windows-amd64.zip"
+            },
+            "32bit": {
+                "url": "https://dist.ipfs.tech/ipget/v$version/ipget_v$version_windows-386.zip"
+            }
+        },
+        "hash": {
+            "url": "$url.sha512"
+        }
+    }
+}
