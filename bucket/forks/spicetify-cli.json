@@ -1,0 +1,41 @@
+{
+    "version": "2.36.2",
+    "description": "Command-line tool to customize the official Spotify client",
+    "homepage": "https://spicetify.app",
+    "license": "LGPL-2.1-only",
+    "notes": "Configure Spotify location using 'spicetify config spotify_path'",
+    "suggest": {
+        "Spotify": "extras/spotify"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/spicetify/spicetify-cli/releases/download/v2.36.2/spicetify-2.36.2-windows-x64.zip",
+            "hash": "ecb228ef89c535890f7b4f2a74e64758ee7ca2bd845b9d567f6031e4db82e5a9"
+        },
+        "32bit": {
+            "url": "https://github.com/spicetify/spicetify-cli/releases/download/v2.36.2/spicetify-2.36.2-windows-x32.zip",
+            "hash": "3c10087896fab8ba489a0f994125a1376bc417211ab4bf8f916a6399a16dea9e"
+        },
+        "arm64": {
+            "url": "https://github.com/spicetify/spicetify-cli/releases/download/v2.36.2/spicetify-2.36.2-windows-arm64.zip",
+            "hash": "15bab3f2f5b16a3248dde12860ae7e3371fbe8956a531ed02f14fc92bf46a3e1"
+        }
+    },
+    "bin": "spicetify.exe",
+    "checkver": {
+        "github": "https://github.com/spicetify/spicetify-cli"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/spicetify/spicetify-cli/releases/download/v$version/spicetify-$version-windows-x64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/spicetify/spicetify-cli/releases/download/v$version/spicetify-$version-windows-x32.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/spicetify/spicetify-cli/releases/download/v$version/spicetify-$version-windows-arm64.zip"
+            }
+        }
+    }
+}
