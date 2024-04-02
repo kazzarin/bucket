@@ -1,0 +1,46 @@
+{
+    "version": "24.02-3749",
+    "description": "Communications and data transfer between devices over local networks",
+    "homepage": "https://kdeconnect.kde.org/",
+    "license": "GPL-3.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://cdn.kde.org/ci-builds/network/kdeconnect-kde/release-24.02/windows/kdeconnect-kde-release_24.02-3749-windows-cl-msvc2022-x86_64.exe#/dl.7z",
+            "hash": "40a91536e38a52abfa6dfcc313853c2eebb5f66fb25304692d61b0823c4a1eb7"
+        }
+    },
+    "pre_install": [
+        "Remove-Item \"$dir\\*\" -Exclude kdeconnect-*.7z -Recurse",
+        "Expand-7ZipArchive \"$dir\\kdeconnect-*.7z\" \"$dir\"",
+        "Remove-Item \"$dir\\kdeconnect-*.7z\""
+    ],
+    "bin": "bin\\kdeconnect-cli.exe",
+    "shortcuts": [
+        [
+            "bin\\kdeconnect-app.exe",
+            "KDE Connect"
+        ]
+    ],
+    "checkver": {
+        "script": [
+            "$relRes = $(Invoke-WebRequest 'https://cdn.kde.org/ci-builds/network/kdeconnect-kde/?C=M;O=D').Content",
+            "$relRes -match 'release-([\\d.]+)'",
+            "$major = $Matches.1",
+            "$verRes = $(Invoke-WebRequest \"https://cdn.kde.org/ci-builds/network/kdeconnect-kde/release-$major/windows/\").Content",
+            "$verRes -match \"kdeconnect-kde-release_$major-(\\d+)\"",
+            "$build = $Matches.1",
+            "\"$major-$build\""
+        ],
+        "regex": "((?<release>[\\d.]+)-\\d+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://cdn.kde.org/ci-builds/network/kdeconnect-kde/release-$matchRelease/windows/kdeconnect-kde-release_$version-windows-cl-msvc2022-x86_64.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
