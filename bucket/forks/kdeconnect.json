@@ -17,7 +17,7 @@
     "bin": "bin\\kdeconnect-cli.exe",
     "shortcuts": [
         [
-            "bin\\kdeconnect-app.exe",
+            "bin\\kdeconnect-indicator.exe",
             "KDE Connect"
         ]
     ],
