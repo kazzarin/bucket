@@ -1,32 +1,24 @@
 {
-    "version": "4.0.4",
+    "version": "1.0.3",
     "description": "Reverse image search tool (SauceNao, IQDB, Ascii2D, trace.moe, and more)",
     "homepage": "https://github.com/Decimation/SmartImage",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Decimation/SmartImage/releases/download/v4.0.4/SmartImage.exe",
-            "hash": "aed04a13b16d22adf40afba0b9ec5dd3bf8b736184eb42849091d7eb87c5d763"
+            "url": "https://github.com/Decimation/SmartImage/releases/download/v1.0.3-rdx/SmartImage_win-x64.exe#/SmartImage.exe",
+            "hash": "cad1c00523753af461044e4ce7608ff0639f38de16acb0dad1b861158d8fbcda"
         }
     },
-    "pre_install": [
-        "if (!(Test-Path \"$persist_dir\\SmartImage.dll.config\")) {",
-        "    Add-Content \"$dir\\SmartImage.dll.config\" '<?xml version=\"1.0\" encoding=\"utf-8\"?>\\n<configuration>\\n<appSettings>\\n</appSettings>\\n</configuration>' -Encoding utf8",
-        "}"
-    ],
     "bin": "SmartImage.exe",
-    "shortcuts": [
-        [
-            "SmartImage.exe",
-            "SmartImage"
-        ]
-    ],
-    "persist": "SmartImage.dll.config",
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/Decimation/SmartImage",
+        "jsonpath": "$.tag_name",
+        "regex": "v([\\d.]+)-rdx"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Decimation/SmartImage/releases/download/v$version/SmartImage.exe"
+                "url": "https://github.com/Decimation/SmartImage/releases/download/v$version-rdx/SmartImage_win-x64.exe#/SmartImage.exe"
             }
         }
     }
