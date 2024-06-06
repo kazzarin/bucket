@@ -5,7 +5,6 @@
     "license": "Apache-2.0",
     "url": "https://psg-prod-eastus.azureedge.net/packages/pester.5.6.0.nupkg",
     "hash": "abe24989861d4ce7fde623ffde657dad9e0771ecf059a055eb872a897be7a2b7",
-    "extract_dir": "tools",
     "psmodule": {
         "name": "Pester"
     },
