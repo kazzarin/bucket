@@ -1,0 +1,38 @@
+{
+    "version": "14.1.0-12.0.0-r2",
+    "description": "GNU Compiler Collection (UCRT, WinLibs build)",
+    "homepage": "https://winlibs.com",
+    "license": "GPL-3.0-or-later,ZPL-2.1,BSD-2-Clause,...",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/14.1.0posix-18.1.7-12.0.0-ucrt-r2/winlibs-x86_64-posix-seh-gcc-14.1.0-mingw-w64ucrt-12.0.0-r2.7z",
+            "hash": "sha512:e3a1e2a98e99df2933a97f205a0ec0869bfc351dacfee6eb9818a62d4e62b155d8a70c69ee12d38b4252103c50af3842bc5e3a69f1da24380ccbf3691f95308e",
+            "extract_dir": "mingw64"
+        },
+        "32bit": {
+            "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/14.1.0posix-18.1.7-12.0.0-ucrt-r2/winlibs-i686-posix-dwarf-gcc-14.1.0-mingw-w64ucrt-12.0.0-r2.7z",
+            "hash": "sha512:45bf692e5f675569df85dd79f0e2d1e5081cdc55f11c11ec0a9b1541bf57a3ab45d0fc9fbafe14f2a83751de62301b3f49c12c152f76f17bd98489619040550c",
+            "extract_dir": "mingw32"
+        }
+    },
+    "post_install": "Copy-Item \"$dir\\bin\\mingw32-make.exe\" \"$dir\\bin\\make.exe\"",
+    "env_add_path": "bin",
+    "checkver": {
+        "github": "https://github.com/brechtsanders/winlibs_mingw",
+        "regex": "(?<gcc>[\\d.]+)posix-(?<llvm>[\\d.]+)-(?<mingw>[\\d.]+)-ucrt-r(?<release>\\d+)",
+        "replace": "${gcc}-${mingw}-r${release}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/$matchGccposix-$matchLlvm-$matchMingw-ucrt-r$matchRelease/winlibs-x86_64-posix-seh-gcc-$matchGcc-mingw-w64ucrt-$matchMingw-r$matchRelease.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/$matchGccposix-$matchLlvm-$matchMingw-ucrt-r$matchRelease/winlibs-i686-posix-dwarf-gcc-$matchGcc-mingw-w64ucrt-$matchMingw-r$matchRelease.7z"
+            }
+        },
+        "hash": {
+            "url": "$url.sha512"
+        }
+    }
+}
