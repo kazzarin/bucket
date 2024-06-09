@@ -19,7 +19,7 @@
     "env_add_path": "bin",
     "checkver": {
         "url": "https://api.github.com/repos/brechtsanders/winlibs_mingw/releases",
-        "jsonpath": "$[?(@.prerelease == false)]..['browser_download_url']",
+        "jsonpath": "$[?(@.prerelease == false)].tag_name",
         "regex": "(?<gcc>[\\d.]+)posix-(?<llvm>[\\d.]+)-(?<mingw>[\\d.]+)-ucrt-r(?<release>\\d+)",
         "replace": "${gcc}-${mingw}-r${release}"
     },
