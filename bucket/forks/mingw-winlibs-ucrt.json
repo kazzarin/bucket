@@ -1,8 +1,8 @@
 {
     "version": "14.1.0-12.0.0-r2",
-    "description": "GNU Compiler Collection (UCRT, WinLibs build)",
+    "description": "MinGW-w64 with GCC toolchain (UCRT)",
     "homepage": "https://winlibs.com",
-    "license": "GPL-3.0-or-later,ZPL-2.1,BSD-2-Clause,...",
+    "license": "GPL-3.0-or-later AND ZPL-2.1 AND BSD-2-Clause",
     "architecture": {
         "64bit": {
             "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/14.1.0posix-18.1.7-12.0.0-ucrt-r2/winlibs-x86_64-posix-seh-gcc-14.1.0-mingw-w64ucrt-12.0.0-r2.7z",
