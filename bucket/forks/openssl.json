@@ -1,0 +1,32 @@
+{
+    "version": "3.3.1",
+    "description": "A robust, commercial-grade, and full-featured toolkit for the TLS, DTLS and QUIC protocols",
+    "homepage": "https://www.openssl.org",
+    "license": "Apache-2.0",
+    "url": "https://download.firedaemon.com/FireDaemon-OpenSSL/openssl-3.3.1.zip",
+    "hash": "dd4fc121dcffa4bcb89012acff0304a4499b06db4874289f871d9d7ba5bcf12f",
+    "extract_dir": "openssl-3",
+    "pre_install": [
+        "$arch = switch ($architecture) {",
+        "    '64bit' { 'x64'; break }",
+        "    '32bit' { 'x32'; break }",
+        "}",
+        "Copy-Item \"$dir\\$arch\\*\" \"$dir\" -Recurse -Force",
+        "Remove-Item \"$dir\\x64\", \"$dir\\x86\" -Recurse"
+    ],
+    "env_add_path": "bin",
+    "env_set": {
+        "OPENSSL_CONF": "$dir\\ssl\\openssl.cnf"
+    },
+    "checkver": {
+        "url": "https://kb.firedaemon.com/support/solutions/articles/4000121705",
+        "regex": "OpenSSL ([\\d.]+) ZIP File \\(x64/x86\\)"
+    },
+    "autoupdate": {
+        "url": "https://download.firedaemon.com/FireDaemon-OpenSSL/openssl-$version.zip",
+        "hash": {
+            "url": "https://kb.firedaemon.com/support/solutions/articles/4000121705",
+            "regex": "OpenSSL $version ZIP File \\(x64/x86\\).*?$sha256"
+        }
+    }
+}
