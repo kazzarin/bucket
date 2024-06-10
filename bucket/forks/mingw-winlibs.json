@@ -1,0 +1,39 @@
+{
+    "version": "14.1.0-12.0.0-r2",
+    "description": "MinGW-w64 with GCC toolchain (MSVCRT)",
+    "homepage": "https://winlibs.com",
+    "license": "GPL-3.0-or-later AND ZPL-2.1 AND BSD-2-Clause",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/14.1.0posix-18.1.7-12.0.0-msvcrt-r2/winlibs-x86_64-posix-seh-gcc-14.1.0-mingw-w64msvcrt-12.0.0-r2.7z",
+            "hash": "sha512:772abe119374dfafdac432e0315acb5429c52e6d39ffc14eeee8842c3253deb953c37fe59157c15cb5af8325f2c272536c4d1f09a870f0cdbdb6294957a70132",
+            "extract_dir": "mingw64"
+        },
+        "32bit": {
+            "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/14.1.0posix-18.1.7-12.0.0-msvcrt-r2/winlibs-i686-posix-dwarf-gcc-14.1.0-mingw-w64msvcrt-12.0.0-r2.7z",
+            "hash": "sha512:1cdd71973057c362000905b16d36597c2595a128828be1d5fadef0031fd3059bd71e078727409ad683f24b62b630bb95fefe93f38429b97a6c2dabb698ccffdb",
+            "extract_dir": "mingw32"
+        }
+    },
+    "post_install": "Copy-Item \"$dir\\bin\\mingw32-make.exe\" \"$dir\\bin\\make.exe\"",
+    "env_add_path": "bin",
+    "checkver": {
+        "url": "https://api.github.com/repos/brechtsanders/winlibs_mingw/releases",
+        "jsonpath": "$[?(@.prerelease == false)].tag_name",
+        "regex": "(?<gcc>[\\d.]+)posix-(?<llvm>[\\d.]+)-(?<mingw>[\\d.]+)-msvcrt-r(?<release>\\d+)",
+        "replace": "${gcc}-${mingw}-r${release}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/$matchGccposix-$matchLlvm-$matchMingw-msvcrt-r$matchRelease/winlibs-x86_64-posix-seh-gcc-$matchGcc-mingw-w64msvcrt-$matchMingw-r$matchRelease.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/$matchGccposix-$matchLlvm-$matchMingw-msvcrt-r$matchRelease/winlibs-i686-posix-dwarf-gcc-$matchGcc-mingw-w64msvcrt-$matchMingw-r$matchRelease.7z"
+            }
+        },
+        "hash": {
+            "url": "$url.sha512"
+        }
+    }
+}
