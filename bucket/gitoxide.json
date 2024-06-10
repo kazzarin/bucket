@@ -21,7 +21,7 @@
     ],
     "checkver": {
         "url": "https://api.github.com/repos/Byron/gitoxide/releases",
-        "jsonpath": "$..browser_download_url",
+        "jsonpath": "$..assets[*].name",
         "regex": "gitoxide-max-pure-v([\\d.]+)-i686-pc-windows-msvc\\.zip"
     },
     "autoupdate": {
