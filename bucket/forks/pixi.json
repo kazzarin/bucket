@@ -1,8 +1,12 @@
 {
     "version": "0.24.2",
-    "description": "pixi is a cross-platform, multi-language package manager and workflow tool built on the shoulders of the conda ecosystem.",
-    "homepage": "https://prefix.dev",
+    "description": "pixi is a cross-platform, multi-language package manager and workflow tool built on the foundation of the conda ecosystem",
+    "homepage": "https://pixi.sh",
     "license": "BSD-3-Clause",
+    "notes": [
+        "For command autocompletion, add the following to your $PROFILE:",
+        "(& pixi completion --shell powershell) | Out-String | Invoke-Expression"
+    ],
     "architecture": {
         "64bit": {
             "url": "https://github.com/prefix-dev/pixi/releases/download/v0.24.2/pixi-x86_64-pc-windows-msvc.zip",
