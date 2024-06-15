@@ -1,0 +1,45 @@
+{
+    "version": "2.0.1.0",
+    "description": "A Swiss Army knife for developers (Preview)",
+    "homepage": "https://devtoys.app",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/DevToys-app/DevToys/releases/download/v2.0.1.0/devtoys_win_x64_portable.zip",
+            "hash": "043c762351a6d778968ee7d2dc9eff543d80137757f054885a2418c74f7931ff"
+        },
+        "32bit": {
+            "url": "https://github.com/DevToys-app/DevToys/releases/download/v2.0.1.0/devtoys_win_x86_portable.zip",
+            "hash": "f8d9fe4273ae1f8bfc1a9c51a2d6c275f1297bdfbf51bc7d84b1d46513a1421d"
+        },
+        "arm64": {
+            "url": "https://github.com/DevToys-app/DevToys/releases/download/v2.0.1.0/devtoys_win_arm64_portable.zip",
+            "hash": "8cba3ef805324e0a39accc5eac4b424ec3c92e89734717e5064de89cf2b731c7"
+        }
+    },
+    "shortcuts": [
+        [
+            "DevToys.exe",
+            "DevToys"
+        ]
+    ],
+    "persist": "Plugins",
+    "checkver": {
+        "url": "https://api.github.com/repos/DevToys-app/DevToys/releases",
+        "jsonpath": "$[0].tag_name",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/DevToys-app/DevToys/releases/download/v$version/devtoys_win_x64_portable.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/DevToys-app/DevToys/releases/download/v$version/devtoys_win_x86_portable.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/DevToys-app/DevToys/releases/download/v$version/devtoys_win_arm64_portable.zip"
+            }
+        }
+    }
+}
