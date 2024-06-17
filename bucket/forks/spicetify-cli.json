@@ -1,5 +1,5 @@
 {
-    "version": "2.36.12",
+    "version": "2.36.13",
     "description": "Command-line tool to customize the official Spotify client",
     "homepage": "https://spicetify.app",
     "license": "LGPL-2.1-only",
@@ -9,32 +9,32 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/spicetify/spicetify-cli/releases/download/v2.36.12/spicetify-2.36.12-windows-x64.zip",
-            "hash": "74808dd8b232167568813f8b7188e54a2c009120fb6fbbd44dad26c63cde42e2"
+            "url": "https://github.com/spicetify/cli/releases/download/v2.36.13/spicetify-2.36.13-windows-x64.zip",
+            "hash": "4af25443a8fdd8f6581dc99206111a3def4f8efa85e4733d85818e4dadfd8e0d"
         },
         "32bit": {
-            "url": "https://github.com/spicetify/spicetify-cli/releases/download/v2.36.12/spicetify-2.36.12-windows-x32.zip",
-            "hash": "0cff8afb0dfb04be068927f6a8a72ab8532ab13743d61ca1c526ba6d4673a1e9"
+            "url": "https://github.com/spicetify/cli/releases/download/v2.36.13/spicetify-2.36.13-windows-x32.zip",
+            "hash": "bd6700dc3cf90ddd62fa2e393d5ed202074126a107ba86e0a0188e3c6e3d90a5"
         },
         "arm64": {
-            "url": "https://github.com/spicetify/spicetify-cli/releases/download/v2.36.12/spicetify-2.36.12-windows-arm64.zip",
-            "hash": "614c3274bfad9813c56732e138709383ef985168ad115c133910c7fcef0c12b6"
+            "url": "https://github.com/spicetify/cli/releases/download/v2.36.13/spicetify-2.36.13-windows-arm64.zip",
+            "hash": "366357bb5abaa27fa4a7ebae6e940661920b9b61390825b6296a81b6e1507af9"
         }
     },
     "bin": "spicetify.exe",
     "checkver": {
-        "github": "https://github.com/spicetify/spicetify-cli"
+        "github": "https://github.com/spicetify/cli"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/spicetify/spicetify-cli/releases/download/v$version/spicetify-$version-windows-x64.zip"
+                "url": "https://github.com/spicetify/cli/releases/download/v$version/spicetify-$version-windows-x64.zip"
             },
             "32bit": {
-                "url": "https://github.com/spicetify/spicetify-cli/releases/download/v$version/spicetify-$version-windows-x32.zip"
+                "url": "https://github.com/spicetify/cli/releases/download/v$version/spicetify-$version-windows-x32.zip"
             },
             "arm64": {
-                "url": "https://github.com/spicetify/spicetify-cli/releases/download/v$version/spicetify-$version-windows-arm64.zip"
+                "url": "https://github.com/spicetify/cli/releases/download/v$version/spicetify-$version-windows-arm64.zip"
             }
         }
     }
