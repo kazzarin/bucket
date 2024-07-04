@@ -10,7 +10,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/ciromattia/kcc/releases/download/v5.6.5/kcc_5.6.5.exe#/kcc.exe",
-            "hash": "8c469b07de3e58d87c47497658052decf22efed3756a178c15d6ec3220a2a9e7"
+            "hash": "a1ed0e58c2c30b3fe1d05f5b27b51e49bf539ed27dbe371f2996dbae3332b9dd"
         }
     },
     "shortcuts": [
