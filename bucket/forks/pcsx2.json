@@ -1,0 +1,70 @@
+{
+    "version": "2.0.2",
+    "description": "A free and open-source PlayStation 2 (PS2) emulator",
+    "homepage": "https://pcsx2.net",
+    "license": "LGPL-3.0-only OR GPL-3.0-only",
+    "notes": [
+        "PCSX2 requires a dump of the PS2 BIOS to function",
+        "The BIOS file must be placed in '$persist_dir\\bios'",
+        "Learn more at: https://pcsx2.net/docs/setup/bios"
+    ],
+    "suggest": {
+        "vcredist": "extras/vcredist2022"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.0.2/pcsx2-v2.0.2-windows-x64-Qt.7z",
+            "hash": "daf7a4025a90b8ff646f50469ad35765a6b4cee183c78fb08a9eb5343cbf6938"
+        }
+    },
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\")) {",
+        "   New-Item \"$persist_dir\" -ItemType Directory | Out-Null",
+        "   if (!(Test-Path \"$persist_dir\\portable.ini\")) {",
+        "       Set-Content -Value $null -Path \"$dir\\portable.ini\"",
+        "   }",
+        "   if (!(Test-Path \"$persist_dir\\inis\\PCSX2.ini\")) {",
+        "       New-Item \"$persist_dir\\inis\" -ItemType Directory | Out-Null",
+        "       '[AutoUpdater]', 'CheckAtStartup = false' | Set-Content \"$persist_dir\\inis\\PCSX2.ini\"",
+        "   }",
+        "}"
+    ],
+    "bin": [
+        [
+            "pcsx2-qt.exe",
+            "pcsx2"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "pcsx2-qt.exe",
+            "PCSX2"
+        ]
+    ],
+    "persist": [
+        "bios",
+        "cheats_ws",
+        "cheats",
+        "covers",
+        "gamesettings",
+        "inis",
+        "logs",
+        "memcards",
+        "portable.ini",
+        "snaps",
+        "sstates",
+        "textures"
+    ],
+    "checkver": {
+        "url": "https://api.pcsx2.net/v1/latestReleasesAndPullRequests",
+        "jsonpath": "$.stableReleases.data[0].version",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/PCSX2/pcsx2/releases/download/v$version/pcsx2-v$version-windows-x64-Qt.7z"
+            }
+        }
+    }
+}
