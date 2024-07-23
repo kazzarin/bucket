@@ -1,16 +1,16 @@
 {
-    "version": "2.18.1",
+    "version": "2.19.1",
     "description": "A neofetch-like tool for fetching system information and displaying them in a pretty way",
     "homepage": "https://github.com/fastfetch-cli/fastfetch",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/fastfetch-cli/fastfetch/releases/download/2.18.1/fastfetch-windows-amd64.7z",
-            "hash": "sha512:cec9f7b6ebc40f0fbac700c6398b758353601bddc1dc6e38a0174c0d91891470fbc69f339c29c4b25c3c21609bf8b08c2dcc4943a8b9aa93096404501a9e3548"
+            "url": "https://github.com/fastfetch-cli/fastfetch/releases/download/2.19.1/fastfetch-windows-amd64.7z",
+            "hash": "sha512:af5bfb5d8fc281bba7c1756b5c96146c297d09de189185c51077fe5071f2a0666c8432b4775b79adce10075c66429803a16da447c4427eaac73ed1482466866d"
         },
         "32bit": {
-            "url": "https://github.com/fastfetch-cli/fastfetch/releases/download/2.18.1/fastfetch-windows-i686.7z",
-            "hash": "sha512:f2b1947f36f11a0ae7e479f49762009af88cd069071ff111b58f25f7becb186ebd06088717dd182e716c1a386295779dd19750bf73b7ef18f945d4501257990c"
+            "url": "https://github.com/fastfetch-cli/fastfetch/releases/download/2.19.1/fastfetch-windows-i686.7z",
+            "hash": "sha512:35f4cb70ad0702191556bae425a0d61e841f70bd3899e581d99f594ff5443af2ae400230957f5cdbbbf715d88052feebd189c0cb0a6d6d54e582642ec4630124"
         }
     },
     "bin": [
