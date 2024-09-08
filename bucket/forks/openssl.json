@@ -1,10 +1,10 @@
 {
-    "version": "3.3.1",
+    "version": "3.3.2",
     "description": "A robust, commercial-grade, and full-featured toolkit for the TLS, DTLS and QUIC protocols",
     "homepage": "https://www.openssl.org",
     "license": "Apache-2.0",
-    "url": "https://download.firedaemon.com/FireDaemon-OpenSSL/openssl-3.3.1.zip",
-    "hash": "dd4fc121dcffa4bcb89012acff0304a4499b06db4874289f871d9d7ba5bcf12f",
+    "url": "https://download.firedaemon.com/FireDaemon-OpenSSL/openssl-3.3.2.zip",
+    "hash": "b2c1902786fef6fe600dd8aeb38e33bdcaf306929fdadf28170cca71999c30aa",
     "extract_dir": "openssl-3",
     "pre_install": [
         "$arch = switch ($architecture) {",
