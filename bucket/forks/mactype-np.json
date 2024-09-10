@@ -1,18 +1,13 @@
 {
-    "version": "1.2023.5.31",
-    "description": "Provides better font rendering for Windows (Preview)",
-    "homepage": "https://mactype.net",
+    "version": "2024.8.15",
+    "description": "Provides better font rendering for Windows",
+    "homepage": "https://github.com/snowie2000/mactype",
     "license": "GPL-3.0-or-later",
     "notes": [
-        "Launch MacType Wizard (macwiz.exe) to configure MacType.",
-        "",
-        "Antivirus software may conflict with MacType because it detects MacType trying to modify running software.",
-        "Workarounds:",
-        "- Run in Service Mode (recommended)",
-        "- Add `HookChildProcesses=0` to profile; see: https://github.com/snowie2000/mactype/wiki/HookChildProcesses"
+        "Run '$dir\\MacWiz.exe' to configure MacType for the first time and select Service Mode"
     ],
-    "url": "https://github.com/snowie2000/mactype/releases/download/v1.2023.5.31/mactype-20230531.zip",
-    "hash": "9e96cdff9fde0cafc31f3bec759f6eda9bd3e4ce5863f7343ed301244123e85b",
+    "url": "https://github.com/snowie2000/mactype/releases/download/1.2014.8.15/MacTypeInstaller_2024.1.exe",
+    "hash": "44d84e21793c401d52e785a8d1b5bcd3f05928d69964e544db0e9191df555c5a",
     "uninstaller": {
         "script": [
             "$text = @(",
@@ -51,10 +46,10 @@
         "MacType.ini"
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/snowie2000/mactype/releases?per_page=1",
-        "regex": "tag/v([\\w.-]+).*?mactype-(?<file>[\\d]+)\\.zip"
+        "github": "https://github.com/snowie2000/mactype",
+        "regex": "tag/(?<tag>[\\d.]+).*?Version ([\\d.]+).*?MacTypeInstaller_(?<file>[\\d.]+)\\.exe"
     },
     "autoupdate": {
-        "url": "https://github.com/snowie2000/mactype/releases/download/v$version/mactype-$matchFile.zip"
+        "url": "https://github.com/snowie2000/mactype/releases/download/$matchTag/MacTypeInstaller_$matchFile.exe"
     }
 }
