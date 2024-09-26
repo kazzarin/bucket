@@ -10,8 +10,10 @@
     "architecture": {
         "64bit": {
             "bin": [
-                "ollama,1.exe",
-                "ollama"
+                [
+                    "ollama,1.exe",
+                    "ollama"
+                ]
             ],
             "shortcuts": [
                 [
@@ -24,8 +26,10 @@
         },
         "arm64": {
             "bin": [
-                "ollama,2.exe",
-                "ollama"
+                [
+                    "ollama,2.exe",
+                    "ollama"
+                ]
             ],
             "shortcuts": [
                 [
