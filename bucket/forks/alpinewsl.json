@@ -1,18 +1,18 @@
 {
     "##": "'rootfs' must be a 'real' directory (at least on Windows 10 RS4)",
-    "version": "3.18.4-0",
+    "version": "3.20.3-0",
     "description": "Install AlpineWSL as a WSL Instance",
     "homepage": "https://github.com/yuk7/AlpineWSL",
     "license": "MIT",
     "notes": "Even when you are logging in as 'root', some operations (like service command) require Windows administrator privileges",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/yuk7/AlpineWSL/releases/download/3.18.4-0/Alpine.zip",
-            "hash": "beb08b0a34f4e88b4b6aab6e38c186c21b849a01cf8ce9aed38f6f24bbd4da8d"
+            "url": "https://github.com/kazzarin/AlpineWSL/releases/download/3.20.3-0/Alpine.zip",
+            "hash": "00a88c0ff0d2e64a5bea6b9f5f974aca55aa31cc3467018af585e5fb47f9d06b"
         },
         "arm64": {
-            "url": "https://github.com/yuk7/AlpineWSL/releases/download/3.18.4-0/Alpine_arm64.zip",
-            "hash": "f8b87897d7fcf83ac077b481cfdc68b1e61d7c0e8e0bce1472a85ba51f6a5dd3"
+            "url": "https://github.com/kazzarin/AlpineWSL/releases/download/3.20.3-0/Alpine_arm64.zip",
+            "hash": "c7c151138644a5928b3fccf6b350cda8355b409c75a2f9e91712865c0af4a600"
         }
     },
     "post_install": [
@@ -53,17 +53,17 @@
     ],
     "persist": "data",
     "checkver": {
-        "url": "https://api.github.com/repos/yuk7/AlpineWSL/releases/latest",
+        "url": "https://api.github.com/repos/kazzarin/AlpineWSL/releases/latest",
         "jsonpath": "$.tag_name",
         "regex": "([\\d.-]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/yuk7/AlpineWSL/releases/download/$version/Alpine.zip"
+                "url": "https://github.com/kazzarin/AlpineWSL/releases/download/$version/Alpine.zip"
             },
             "arm64": {
-                "url": "https://github.com/yuk7/AlpineWSL/releases/download/$version/Alpine_arm64.zip"
+                "url": "https://github.com/kazzarin/AlpineWSL/releases/download/$version/Alpine_arm64.zip"
             }
         }
     }
