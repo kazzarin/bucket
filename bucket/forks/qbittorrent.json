@@ -1,5 +1,5 @@
 {
-    "version": "5.0.0",
+    "version": "5.0.1",
     "description": "qBittorrent is a fast and stable BitTorrent client based on the Qt toolkit and libtorrent library (Qt6; libtorrent 2.x)",
     "homepage": "https://www.qbittorrent.org/",
     "license": {
@@ -12,8 +12,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-5.0.0/qbittorrent_5.0.0_lt20_qt6_x64_setup.exe#/dl.7z",
-            "hash": "sha1:211826f0c20f7c90d3b52968ebfbf809dd6b9c8d"
+            "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-5.0.1/qbittorrent_5.0.1_qt6_lt20_x64_setup.exe#/dl.7z",
+            "hash": "sha1:a6afbf802076a0d2a6b75866d379676369c4dfe5"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninst.exe\" -Force -Recurse",
@@ -31,7 +31,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-$version/qbittorrent_$version_lt20_qt6_x64_setup.exe#/dl.7z"
+                "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-$version/qbittorrent_$version_qt6_lt20_x64_setup.exe#/dl.7z"
             }
         }
     }
