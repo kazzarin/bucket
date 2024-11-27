@@ -1,5 +1,5 @@
 {
-    "version": "20241126",
+    "version": "20241127",
     "description": "mpv is a free media player for the command line that supports a wide variety of media file formats, audio and video codecs, and subtitle types (AVX2; Nightly)",
     "homepage": "https://mpv.io",
     "license": "GPL-2.0-or-later OR LGPL-2.1-or-later",
@@ -13,8 +13,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20241126/mpv-x86_64-v3-20241126-git-81db344.7z",
-            "hash": "4b652d7a0e8e68d1ce52ebf5d81709c8298fe21f57a583a6ae53864a64ca6964"
+            "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20241127/mpv-x86_64-v3-20241127-git-ad1fb9f.7z",
+            "hash": "937eaffa39206be8c2d946bbbff3138df42340f20bbbd53ae8d7ff0a16673603"
         }
     },
     "pre_install": "Remove-Item \"$dir\\updater.bat\"",
