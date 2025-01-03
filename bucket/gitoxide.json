@@ -34,6 +34,9 @@
                 "url": "https://github.com/Byron/gitoxide/releases/download/v$version/gitoxide-max-pure-v$version-i686-pc-windows-msvc.zip",
                 "extract_dir": "gitoxide-max-pure-v$version-i686-pc-windows-msvc"
             }
+        },
+        "hash": {
+            "url": "$baseurl/hashes.sha256"
         }
     }
 }
