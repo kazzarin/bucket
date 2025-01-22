@@ -1,18 +1,18 @@
 {
     "##": "'rootfs' must be a 'real' directory (at least on Windows 10 RS4)",
-    "version": "3.21.1-0",
+    "version": "3.21.2-0",
     "description": "Install AlpineWSL as a WSL Instance",
     "homepage": "https://github.com/yuk7/AlpineWSL",
     "license": "MIT",
     "notes": "Even when you are logging in as 'root', some operations (like service command) require Windows administrator privileges",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kazzarin/AlpineWSL/releases/download/3.21.1-0/Alpine.zip",
-            "hash": "sha512:dcf06561c15621b99335df540090476a2603c49a5b8ab017f40755045cb4ff56e98ba227b1f875b4f053b62de7b050d046b553af9029695e27bac690d28305e3"
+            "url": "https://github.com/kazzarin/AlpineWSL/releases/download/3.21.2-0/Alpine.zip",
+            "hash": "sha512:742e8b3dfc6a398de15bc24d1beb42cab4a78d09ba5a429d4b0afe84d22562cb9285c6ca6932d0dd9f506f1fa5de8274d1e7f9fc7456fb36f34267e47ed2b6f3"
         },
         "arm64": {
-            "url": "https://github.com/kazzarin/AlpineWSL/releases/download/3.21.1-0/Alpine_arm64.zip",
-            "hash": "sha512:14b33a5a14db461c8051461473945606830e40f5bcb643910dfa72271c8e12f842c8333aac84ac9aba6f2c37567d49b02d08067c9f01af35c3a5fb74512ae56d"
+            "url": "https://github.com/kazzarin/AlpineWSL/releases/download/3.21.2-0/Alpine_arm64.zip",
+            "hash": "sha512:4319bf86beb37b80f05753511886961101569779ef30b2f8c0d6c81313f9e9aa88dfa9b2129d4fa67eab63f6562ddf2ddb277af7989278e25c1887d5990654d9"
         }
     },
     "post_install": [
