@@ -1,14 +1,14 @@
 {
-    "version": "2.64",
+    "version": "2.64.1",
     "description": "Inno Setup Unpacker (Unicode)",
     "homepage": "https://github.com/jrathlev/InnoUnpacker-Windows-GUI/tree/master/innounp-2",
     "license": "GPL-3.0-only",
-    "url": "https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/d3bdefc1129e71313afbf4151dc9821cfb9f76c6/innounp-2/bin/innounp-2.zip",
-    "hash": "4d7190c31e5d0d933a700063160eafd919d3a896ecb44b1deb6c13c9d687221e",
+    "url": "https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/b8ded2ce193a844031eb1cd3ad38761d844dc886/innounp-2/bin/innounp-2.zip",
+    "hash": "56f0672f751c9a5d8b8ca4150e85ba19816477782d4cafcf4918790696ac119e",
     "bin": "innounp.exe",
     "checkver": {
         "script": [
-            "$verRes = $(Invoke-WebRequest 'https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/master/innounp-2/innounp.htm').Content",
+            "$verRes = $(Invoke-WebRequest 'https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/master/innounp-2/docs/innounp.htm').Content",
             "$verRes -match \"Version ([\\d.]+) - Unicode\"",
             "$ver = $Matches.1",
             "$auth = Get-GitHubToken",
