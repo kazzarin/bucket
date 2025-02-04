@@ -4,10 +4,7 @@
     "homepage": "https://github.com/yt-dlp/yt-dlp",
     "license": "Unlicense",
     "suggest": {
-        "ffmpeg": [
-            "versions/ffmpeg-gyan-nightly",
-            "versions/ffmpeg-yt-dlp"
-        ]
+        "ffmpeg": "versions/ffmpeg-gyan-nightly"
     },
     "architecture": {
         "64bit": {
