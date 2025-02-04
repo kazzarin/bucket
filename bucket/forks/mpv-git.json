@@ -25,8 +25,8 @@
             "hash": "95453e484e62081993a74f8bd915d1e053175e8a6b54e6fd2a2dce52409a3c70"
         }
     },
-    "pre_install": "Remove-Item \"$dir\\updater.bat\"",
-    "env_add_path": ".",
+    "pre_install": "Remove-Item \"$dir\\updater.bat\", \"$dir\\installer\\updater.ps1\"",
+    "bin": "mpv.exe",
     "shortcuts": [
         [
             "mpv.exe",
