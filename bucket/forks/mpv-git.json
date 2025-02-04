@@ -8,7 +8,10 @@
         "Optionally, you can install Icaros to enable thumbnails for all media types."
     ],
     "suggest": {
-        "yt-dlp": "main/yt-dlp",
+        "yt-dlp": [
+            "main/yt-dlp",
+            "kazzarin/yt-dlp-nightly"
+        ],
         "Icaros": "kazzarin/icaros-np"
     },
     "architecture": {
