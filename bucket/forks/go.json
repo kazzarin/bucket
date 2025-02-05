@@ -3,6 +3,10 @@
     "description": "An open source programming language that makes it easy to build simple, reliable, and efficient software.",
     "homepage": "https://go.dev",
     "license": "BSD-3-Clause",
+    "notes": [
+        "To set a GOPATH location, read the following instructions:",
+        "https://go.dev/wiki/SettingGOPATH#windows"
+    ],
     "architecture": {
         "64bit": {
             "url": "https://dl.google.com/go/go1.23.6.windows-amd64.zip",
@@ -18,22 +22,6 @@
         }
     },
     "extract_dir": "go",
-    "installer": {
-        "script": [
-            "$envgopath = \"$env:USERPROFILE\\go\"",
-            "if ($env:GOPATH) { $envgopath = $env:GOPATH }",
-            "info \"Adding '$envgopath\\bin' to PATH...\"",
-            "Add-Path -Path \"$envgopath\\bin\" -Global:$global -Force"
-        ]
-    },
-    "uninstaller": {
-        "script": [
-            "$envgopath = \"$env:USERPROFILE\\go\"",
-            "if ($env:GOPATH) { $envgopath = $env:GOPATH }",
-            "info \"Removing '$envgopath\\bin' from PATH...\"",
-            "Remove-Path -Path \"$envgopath\\bin\" -Global:$global"
-        ]
-    },
     "bin": [
         "bin\\go.exe",
         "bin\\gofmt.exe"
