@@ -31,11 +31,19 @@
         "architecture": {
             "64bit": {
                 "url": "https://mirror.msys2.org/mingw/clang64/mingw-w64-clang-x86_64-lua-$version-any.pkg.tar.zst",
-                "extract_dir": "clang64"
+                "extract_dir": "clang64",
+                "hash": {
+                    "url": "https://packages.msys2.org/packages/mingw-w64-clang-x86_64-lua",
+                    "regex": "(?s)SHA256:.*?$sha256"
+                }
             },
             "arm64": {
                 "url": "https://mirror.msys2.org/mingw/clangarm64/mingw-w64-clang-aarch64-lua-$version-any.pkg.tar.zst",
-                "extract_dir": "clangarm64"
+                "extract_dir": "clangarm64",
+                "hash": {
+                    "url": "https://packages.msys2.org/packages/mingw-w64-clang-aarch64-lua",
+                    "regex": "(?s)SHA256:.*?$sha256"
+                }
             }
         }
     }
