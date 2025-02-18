@@ -20,16 +20,16 @@
     "checkver": {
         "url": "https://api.github.com/repos/brechtsanders/winlibs_mingw/releases",
         "jsonpath": "$[?(@.prerelease == false)].tag_name",
-        "regex": "(?<gcc>[\\d.]+)posix-(?<llvm>[\\d.]+)-(?<mingw>[\\d.]+)-msvcrt-r(?<release>\\d+)",
+        "regex": "(?<full>(?<gcc>[\\d.]+)posix-(?:(?<llvm>[\\d.]+)-)?(?<mingw>[\\d.]+)-msvcrt-r(?<release>\\d+))",
         "replace": "${gcc}-${mingw}-r${release}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/$matchGccposix-$matchLlvm-$matchMingw-msvcrt-r$matchRelease/winlibs-x86_64-posix-seh-gcc-$matchGcc-mingw-w64msvcrt-$matchMingw-r$matchRelease.7z"
+                "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/$matchFull/winlibs-x86_64-posix-seh-gcc-$matchGcc-mingw-w64msvcrt-$matchMingw-r$matchRelease.7z"
             },
             "32bit": {
-                "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/$matchGccposix-$matchLlvm-$matchMingw-msvcrt-r$matchRelease/winlibs-i686-posix-dwarf-gcc-$matchGcc-mingw-w64msvcrt-$matchMingw-r$matchRelease.7z"
+                "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/$matchFull/winlibs-i686-posix-dwarf-gcc-$matchGcc-mingw-w64msvcrt-$matchMingw-r$matchRelease.7z"
             }
         },
         "hash": {
