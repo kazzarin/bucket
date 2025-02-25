@@ -1,5 +1,5 @@
 {
-    "version": "1.98.0-insider-1740414926501",
+    "version": "1.98.0-insider-1740460007478",
     "description": "Visual Studio Code is a lightweight but powerful source code editor (Insiders)",
     "homepage": "https://code.visualstudio.com/insiders/",
     "license": {
@@ -12,12 +12,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/e95380d32c974525a0736f258db73214a27b1a09/VSCode-win32-x64-1.98.0-insider.zip",
-            "hash": "574e8b43eee922c11702754691751ab37a66b4253f1af89996274875689b914e"
+            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/ac0e8f0f32e3de145dc3aa11d8182f208a05397f/VSCode-win32-x64-1.98.0-insider.zip",
+            "hash": "6faeeba9f1d230ea3adc1503df4b094296262d283a2f0b728762c46d78a918ce"
         },
         "arm64": {
-            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/e95380d32c974525a0736f258db73214a27b1a09/VSCode-win32-arm64-1.98.0-insider.zip",
-            "hash": "31abd59afc22b32e0ea082d8c43874d590415787bae4b9c4a3e6f3731b273dfb"
+            "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/ac0e8f0f32e3de145dc3aa11d8182f208a05397f/VSCode-win32-arm64-1.98.0-insider.zip",
+            "hash": "0e350ff00fae5646485151eb6461b28f77aefd87f9b5478a63ce56226469324c"
         }
     },
     "env_add_path": "bin",
