@@ -1,20 +1,20 @@
 {
-    "version": "0.35.0",
+    "version": "0.36.0",
     "description": "WebDriver for the Firefox web browser.",
     "homepage": "https://github.com/mozilla/geckodriver",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mozilla/geckodriver/releases/download/v0.35.0/geckodriver-v0.35.0-win64.zip",
-            "hash": "e6de1ee49aad29431f7b8ff366f10486d008dd5cd8dde94cb01d7e9e3d33d988"
+            "url": "https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-win64.zip",
+            "hash": "4c23d54681d431b42575a66c3c89202a40add3ef45e64b94acac620a89774ad2"
         },
         "32bit": {
-            "url": "https://github.com/mozilla/geckodriver/releases/download/v0.35.0/geckodriver-v0.35.0-win32.zip",
-            "hash": "063d36b19bac132db63e5241066bdbd95f92ee866f8a5cbb29b114627849cca5"
+            "url": "https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-win32.zip",
+            "hash": "491d8f557774a49238498da537314a5eeed0cd27a360f7980d7d59062f2322a5"
         },
         "arm64": {
-            "url": "https://github.com/mozilla/geckodriver/releases/download/v0.35.0/geckodriver-v0.35.0-win-aarch64.zip",
-            "hash": "5a91efeec338d9b72f24d258373d583f2de3186a1a18dbae5bc2214774273ec9"
+            "url": "https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-win-aarch64.zip",
+            "hash": "2fe7c4e5d95ea6866c36c5599c16d8681a5be9aff62f910dce853720778d3380"
         }
     },
     "bin": "geckodriver.exe",
