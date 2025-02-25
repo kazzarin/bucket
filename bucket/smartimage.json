@@ -1,12 +1,12 @@
 {
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "Reverse image search tool (SauceNao, IQDB, Ascii2D, trace.moe, and more)",
     "homepage": "https://github.com/Decimation/SmartImage",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Decimation/SmartImage/releases/download/v1.0.8-rdx/SmartImage_win-x64.exe#/SmartImage.exe",
-            "hash": "8f670745b0c182a32f9e43e24a27a0bf8c96ffe9a53444f418862b7706e870d1"
+            "url": "https://github.com/Decimation/SmartImage/releases/download/v1.0.9-rdx/SmartImage_win-x64.exe#/SmartImage.exe",
+            "hash": "1a1418cdc83c1cece760947362a58bb5addedb95173617e493202c84ed8e4090"
         }
     },
     "pre_install": [
