@@ -1,0 +1,20 @@
+{
+    "version": "0.12.40",
+    "description": "A GUI tool to manage the Windows driver store",
+    "homepage": "https://github.com/lostindark/DriverStoreExplorer",
+    "license": "GPL-2.0-only",
+    "url": "https://github.com/lostindark/DriverStoreExplorer/releases/download/v0.12.40/DriverStoreExplorer.v0.12.40.zip",
+    "hash": "377f510bcafc7f6b0462d2e2c65726dd05c27b1182c2c6041e6962334edd593c",
+    "pre_install": "if (!(Test-Path \"$persist_dir\\Rapr.user.config\")) { New-Item \"$dir\\Rapr.user.config\" -ItemType file | Out-Null }",
+    "shortcuts": [
+        [
+            "Rapr.exe",
+            "Driver Store Explorer"
+        ]
+    ],
+    "persist": "Rapr.user.config",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/lostindark/DriverStoreExplorer/releases/download/v$version/DriverStoreExplorer.v$version.zip"
+    }
+}
