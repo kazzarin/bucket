@@ -1,11 +1,11 @@
 {
-    "version": "2025.1.17",
+    "version": "2025.4.11",
     "description": "Provides better font rendering for Windows",
     "homepage": "https://github.com/snowie2000/mactype",
     "license": "GPL-3.0-or-later",
     "notes": "Run '$dir\\MacWiz.exe' to configure MacType for the first time and select Service Mode",
-    "url": "https://github.com/snowie2000/mactype/releases/download/v1.2025.1.17/MacTypeInstaller_2025.1.17.exe",
-    "hash": "26939c0a36a83472719641c09466c9531811c026b860603c8c346dbb486e423f",
+    "url": "https://github.com/snowie2000/mactype/releases/download/v1.2025.4.11/MacTypeInstaller_2025.4.11.exe",
+    "hash": "3131c19264922f31bebb5c352897f4fa519e3b06121919385f408ba136c49d4b",
     "innosetup": true,
     "uninstaller": {
         "script": [
@@ -42,7 +42,7 @@
     ],
     "checkver": {
         "github": "https://github.com/snowie2000/mactype",
-        "regex": "tag/(?<tag>v?[\\d.]+).*?Version ([\\d.]+).*?MacTypeInstaller_(?<file>[\\d.]+)\\.exe"
+        "regex": "tag/(?<tag>v?[\\d.]+).*?\"name\":.*?([\\d.]+).*?MacTypeInstaller_(?<file>[\\d.]+)\\.exe"
     },
     "autoupdate": {
         "url": "https://github.com/snowie2000/mactype/releases/download/$matchTag/MacTypeInstaller_$matchFile.exe"
