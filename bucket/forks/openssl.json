@@ -1,18 +1,19 @@
 {
-    "version": "3.4.1",
+    "version": "3.5.0",
     "description": "A robust, commercial-grade, and full-featured toolkit for the TLS, DTLS and QUIC protocols",
     "homepage": "https://openssl-library.org",
     "license": "Apache-2.0",
-    "url": "https://download.firedaemon.com/FireDaemon-OpenSSL/openssl-3.4.1.zip",
-    "hash": "7b03166bcef8c5c5aa960b1918890aad10a00599a1336862339712174a1ea0ab",
+    "url": "https://download.firedaemon.com/FireDaemon-OpenSSL/openssl-3.5.0.zip",
+    "hash": "9ac6b98d947e558e6adbbc9cc9eaf504b3540bab90767cf71e3582a14f75afbd",
     "extract_dir": "openssl-3",
     "pre_install": [
         "$arch = switch ($architecture) {",
         "    '64bit' { 'x64'; break }",
         "    '32bit' { 'x32'; break }",
+        "    'arm64' { 'arm64'; break }",
         "}",
         "Copy-Item \"$dir\\$arch\\*\" \"$dir\" -Recurse -Force",
-        "Remove-Item \"$dir\\x64\", \"$dir\\x86\" -Recurse"
+        "Remove-Item \"$dir\\x64\", \"$dir\\x86\", \"$dir\\arm64\" -Recurse"
     ],
     "env_add_path": "bin",
     "env_set": {
@@ -20,13 +21,13 @@
     },
     "checkver": {
         "url": "https://kb.firedaemon.com/support/solutions/articles/4000121705",
-        "regex": "OpenSSL ([\\d.]+) ZIP x64\\+x86"
+        "regex": "OpenSSL ([\\d.]+) LTS.*?ZIP x86\\+x64\\+ARM64"
     },
     "autoupdate": {
         "url": "https://download.firedaemon.com/FireDaemon-OpenSSL/openssl-$version.zip",
         "hash": {
             "url": "https://kb.firedaemon.com/support/solutions/articles/4000121705",
-            "regex": "OpenSSL $version ZIP x64\\+x86.*?$sha256"
+            "regex": "OpenSSL $version LTS.*?ZIP x86\\+x64\\+ARM64.*?$sha256"
         }
     }
 }
