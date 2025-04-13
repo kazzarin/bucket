@@ -7,7 +7,7 @@ name: Excavator
 jobs:
   excavate:
     name: Excavate
-    runs-on: windows-latest
+    runs-on: windows-2025
     steps:
       - uses: actions/checkout@v4
       - name: Excavate
