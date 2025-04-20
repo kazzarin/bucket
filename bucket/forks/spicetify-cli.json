@@ -1,5 +1,5 @@
 {
-    "version": "2.39.6",
+    "version": "2.39.7",
     "description": "Command-line tool to customize the official Spotify client",
     "homepage": "https://spicetify.app",
     "license": "LGPL-2.1-only",
@@ -9,16 +9,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/spicetify/cli/releases/download/v2.39.6/spicetify-2.39.6-windows-x64.zip",
-            "hash": "e97baf7cf9decdde851386f51d54d1c6705e84bd3d1ff617d763cf20dbd19538"
+            "url": "https://github.com/spicetify/cli/releases/download/v2.39.7/spicetify-2.39.7-windows-x64.zip",
+            "hash": "59fdece7a1df8ba1c4f79add27618d713eb41aa084290060ec3ea75a69b05791"
         },
         "32bit": {
-            "url": "https://github.com/spicetify/cli/releases/download/v2.39.6/spicetify-2.39.6-windows-x32.zip",
-            "hash": "d03836843d218b63df19cc705aee494ec13fa57cb222f61aa678bed972df1436"
+            "url": "https://github.com/spicetify/cli/releases/download/v2.39.7/spicetify-2.39.7-windows-x32.zip",
+            "hash": "714cb19cb23ceb6745ff661eee5d14707ea39683a73b87d8ba3392c5530f7bd8"
         },
         "arm64": {
-            "url": "https://github.com/spicetify/cli/releases/download/v2.39.6/spicetify-2.39.6-windows-arm64.zip",
-            "hash": "b0ffce7ca2086b801eac042a1dffba38f4d826f3014a094ec09c26e81d3f6e67"
+            "url": "https://github.com/spicetify/cli/releases/download/v2.39.7/spicetify-2.39.7-windows-arm64.zip",
+            "hash": "bc59bc34a60230333894a5d68cb35899cec9e515a71ac5854777d6b7a3b7bb44"
         }
     },
     "bin": "spicetify.exe",
