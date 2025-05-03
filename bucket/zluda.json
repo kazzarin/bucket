@@ -1,12 +1,12 @@
 {
-    "version": "3.9.3",
+    "version": "3.9.4",
     "description": "ZLUDA lets you run unmodified CUDA applications with near-native performance on AMD GPUs (ROCm 6)",
     "homepage": "https://github.com/lshqqytiger/ZLUDA",
     "license": "Apache-2.0 OR MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/lshqqytiger/ZLUDA/releases/download/rel.0d1513a017397bf9ebbac0b3c846160c8d4fc700/ZLUDA-windows-rocm6-amd64.zip",
-            "hash": "4ab961924895b3aac6f431df622ea9b5bc64fe755923387a24e2701cd675f554"
+            "url": "https://github.com/lshqqytiger/ZLUDA/releases/download/rel.8d2128caf460b853b165cab0b4d8826b6b734ae7/ZLUDA-windows-rocm6-amd64.zip",
+            "hash": "954d3900dbce981f11d904dd371b6fde3e5823f21f0904b77ef4c89b9fe330dd"
         }
     },
     "extract_dir": "zluda",
