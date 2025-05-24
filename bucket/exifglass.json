@@ -4,7 +4,6 @@
     "homepage": "https://github.com/d2phap/ExifGlass",
     "license": "GPL-3.0-only",
     "suggest": {
-        ".NET Desktop Runtime": "extras/windowsdesktop-runtime",
         "exiftool": "main/exiftool"
     },
     "architecture": {

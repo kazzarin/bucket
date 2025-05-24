@@ -4,11 +4,10 @@
     "homepage": "https://imageglass.org",
     "license": "GPL-3.0-only",
     "suggest": {
-        ".NET Desktop Runtime": "extras/windowsdesktop-runtime",
         "exifglass": "kazzarin/exifglass"
     },
     "notes": [
-        "Requires WebView2 to be installed: https://go.microsoft.com/fwlink/p/?LinkId=2124703",
+        "Optional dependency WebView2 to be installed: https://go.microsoft.com/fwlink/p/?LinkId=2124703",
         "Config has moved to '$dir\\igconfig.json' in 9.x; settings are not migrated from 8.x",
         "Delete '$persist_dir\\Themes' prior to upgrading to 9.x to resolve theme incompatibility"
     ],
