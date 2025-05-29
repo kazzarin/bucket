@@ -45,7 +45,7 @@
         },
         "hash": {
             "url": "https://code.visualstudio.com/sha?build=insider",
-            "regex": "$url.*?$sha256"
+            "regex": "(?s)$url.*?$sha256"
         }
     }
 }
