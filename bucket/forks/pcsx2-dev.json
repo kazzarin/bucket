@@ -1,6 +1,6 @@
 {
-    "version": "2.2.0",
-    "description": "A free and open-source PlayStation 2 (PS2) emulator",
+    "version": "2.3.403",
+    "description": "A free and open-source PlayStation 2 (PS2) emulator (Nightly)",
     "homepage": "https://pcsx2.net",
     "license": "LGPL-3.0-only OR GPL-3.0-only",
     "notes": [
@@ -13,8 +13,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.2.0/pcsx2-v2.2.0-windows-x64-Qt.7z",
-            "hash": "6215d72ae28f4be839edc7664f9763e5c0db092d6f311ae4f3160109e5c3754a"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.3.403/pcsx2-v2.3.403-windows-x64-Qt.7z",
+            "hash": "d94532ab96b6fbdedc8269ca4049def9cdb64448dd8396dac7e204b9121d691f"
         }
     },
     "pre_install": [
@@ -38,7 +38,7 @@
     "shortcuts": [
         [
             "pcsx2-qt.exe",
-            "PCSX2"
+            "PCSX2 (Nightly)"
         ]
     ],
     "persist": [
@@ -58,7 +58,7 @@
     ],
     "checkver": {
         "url": "https://api.pcsx2.net/v1/latestReleasesAndPullRequests",
-        "jsonpath": "$.stableReleases.data[0].version",
+        "jsonpath": "$.nightlyReleases.data[0].version",
         "regex": "v([\\d.]+)"
     },
     "autoupdate": {
