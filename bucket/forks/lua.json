@@ -1,17 +1,17 @@
 {
-    "version": "5.4.7-3",
+    "version": "5.4.8-1",
     "description": "A powerful, efficient, lightweight, embeddable scripting language",
     "homepage": "https://www.lua.org",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.msys2.org/mingw/clang64/mingw-w64-clang-x86_64-lua-5.4.7-3-any.pkg.tar.zst",
-            "hash": "ff048db33d2b311a1c550f4d03645a21c71a3b6de8e4db509b29b7edb71c02db",
+            "url": "https://mirror.msys2.org/mingw/clang64/mingw-w64-clang-x86_64-lua-5.4.8-1-any.pkg.tar.zst",
+            "hash": "18d6fb9747d174a8707ad875c8c7fa1d7872a42af95beedd6837911a9df9cb82",
             "extract_dir": "clang64"
         },
         "arm64": {
-            "url": "https://mirror.msys2.org/mingw/clangarm64/mingw-w64-clang-aarch64-lua-5.4.7-3-any.pkg.tar.zst",
-            "hash": "f0203f136ddfe858bde416decb5cd63b6a1d87e3381db0d86da84231e1c7ece2",
+            "url": "https://mirror.msys2.org/mingw/clangarm64/mingw-w64-clang-aarch64-lua-5.4.8-1-any.pkg.tar.zst",
+            "hash": "c644d96a7203443c9500cbdb43fc06a607ad9337562e93f74c439489f5db5870",
             "extract_dir": "clangarm64"
         }
     },
