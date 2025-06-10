@@ -27,6 +27,10 @@
             "32bit": {
                 "url": "https://github.com/gdl-org/builds/releases/download/$version/gallery-dl_windows_x86.exe#/gallery-dl.exe"
             }
+        },
+        "hash": {
+            "url": "https://api.github.com/repos/gdl-org/builds/releases",
+            "regex": "(?s).*sha256:$sha256.*?$url"
         }
     }
 }
