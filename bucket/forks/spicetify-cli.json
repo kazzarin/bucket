@@ -36,6 +36,10 @@
             "arm64": {
                 "url": "https://github.com/spicetify/cli/releases/download/v$version/spicetify-$version-windows-arm64.zip"
             }
+        },
+        "hash": {
+            "url": "https://api.github.com/repos/spicetify/cli/releases",
+            "regex": "(?s).*sha256:$sha256.*?$url"
         }
     }
 }
