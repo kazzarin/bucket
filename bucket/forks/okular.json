@@ -1,0 +1,41 @@
+{
+    "version": "25.08-6483",
+    "description": "Universal document viewer",
+    "homepage": "https://okular.kde.org",
+    "license": "GPL-2.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://cdn.kde.org/ci-builds/graphics/okular/release-25.08/windows/okular-release_25.08-6483-windows-cl-msvc2022-x86_64.7z",
+            "hash": "106f6504dc7a32e7a23b5fc8125a256bbc302cd204225952041d8d5c9eb08a82"
+        }
+    },
+    "bin": "bin\\okular.exe",
+    "shortcuts": [
+        [
+            "bin\\okular.exe",
+            "Okular"
+        ]
+    ],
+    "checkver": {
+        "script": [
+            "$relRes = $(Invoke-WebRequest 'https://cdn.kde.org/ci-builds/graphics/okular/?C=M;O=D').Content",
+            "$relRes -match 'release-([\\d.]+)'",
+            "$major = $Matches.1",
+            "$verRes = $(Invoke-WebRequest \"https://cdn.kde.org/ci-builds/graphics/okular/release-$major/windows/\").Content",
+            "$verRes -match \"okular-release_$major-(\\d+)\"",
+            "$build = $Matches.1",
+            "\"$major-$build\""
+        ],
+        "regex": "((?<release>[\\d.]+)-\\d+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://cdn.kde.org/ci-builds/graphics/okular/release-$matchRelease/windows/okular-release_$version-windows-cl-msvc2022-x86_64.7z",
+                "hash": {
+                    "url": "$url.sha256"
+                }
+            }
+        }
+    }
+}
