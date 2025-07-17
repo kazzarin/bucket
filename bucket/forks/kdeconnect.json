@@ -1,22 +1,19 @@
 {
     "version": "25.08-5220",
     "description": "Communications and data transfer between devices over local networks",
-    "homepage": "https://kdeconnect.kde.org/",
+    "homepage": "https://kdeconnect.kde.org",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.kde.org/ci-builds/network/kdeconnect-kde/release-25.08/windows/kdeconnect-kde-release_25.08-5220-windows-cl-msvc2022-x86_64.exe#/dl.7z",
-            "hash": "e62e46d2140d4d0ee702266615d82c92d1d4b012824a3d4ccddf155f88c4ca39"
+            "url": "https://cdn.kde.org/ci-builds/network/kdeconnect-kde/release-25.08/windows/kdeconnect-kde-release_25.08-5220-windows-cl-msvc2022-x86_64.7z",
+            "hash": "14cd36514e2b295b98843e43c21c4a0ae7bbddf2035d071d904c3a4d76f198f1"
         }
     },
-    "pre_install": [
-        "Remove-Item \"$dir\\*\" -Exclude kdeconnect-*.7z -Recurse",
-        "Expand-7zipArchive \"$dir\\kdeconnect-*.7z\" \"$dir\" -Removal"
-    ],
-    "bin": "bin\\kdeconnect-cli.exe",
+    "extract_dir": "bin",
+    "bin": "kdeconnect-cli.exe",
     "shortcuts": [
         [
-            "bin\\kdeconnect-indicator.exe",
+            "kdeconnect-indicator.exe",
             "KDE Connect"
         ]
     ],
@@ -35,7 +32,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://cdn.kde.org/ci-builds/network/kdeconnect-kde/release-$matchRelease/windows/kdeconnect-kde-release_$version-windows-cl-msvc2022-x86_64.exe#/dl.7z"
+                "url": "https://cdn.kde.org/ci-builds/network/kdeconnect-kde/release-$matchRelease/windows/kdeconnect-kde-release_$version-windows-cl-msvc2022-x86_64.7z"
             }
         },
         "hash": {
