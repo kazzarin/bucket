@@ -9,11 +9,10 @@
             "hash": "14cd36514e2b295b98843e43c21c4a0ae7bbddf2035d071d904c3a4d76f198f1"
         }
     },
-    "extract_dir": "bin",
-    "bin": "kdeconnect-cli.exe",
+    "bin": "bin\\kdeconnect-cli.exe",
     "shortcuts": [
         [
-            "kdeconnect-indicator.exe",
+            "bin\\kdeconnect-indicator.exe",
             "KDE Connect"
         ]
     ],
