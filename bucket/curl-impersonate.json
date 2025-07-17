@@ -12,6 +12,10 @@
         "32bit": {
             "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v1.1.2/libcurl-impersonate-v1.1.2.i686-win32.tar.gz",
             "hash": "53b1c6566f2dc6bcdb3bd7adac4aa3aa05e435b54ff77e170b58432c0bb4667f"
+        },
+        "arm64": {
+            "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v1.1.2/libcurl-impersonate-v1.1.2.arm64-win32.tar.gz",
+            "hash": "e73867919c9b6f712447acd8caecdb34b9326f18dabd0ec77f1354faa42dc520"
         }
     },
     "extract_dir": "./bin",
@@ -35,6 +39,9 @@
             },
             "32bit": {
                 "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v$version/libcurl-impersonate-v$version.i686-win32.tar.gz"
+            },
+            "arm64": {
+                "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v$version/libcurl-impersonate-v$version.arm64-win32.tar.gz"
             }
         },
         "hash": {
