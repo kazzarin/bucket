@@ -1,5 +1,5 @@
 {
-    "version": "2.5.80",
+    "version": "2.5.81",
     "description": "A free and open-source PlayStation 2 (PS2) emulator (Nightly)",
     "homepage": "https://pcsx2.net",
     "license": "LGPL-3.0-only OR GPL-3.0-only",
@@ -13,8 +13,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.5.80/pcsx2-v2.5.80-windows-x64-Qt.7z",
-            "hash": "9270910d930a2ec6389a36b7cdbf5f99a197db3a2b38005ed985569d69aa732c"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.5.81/pcsx2-v2.5.81-windows-x64-Qt.7z",
+            "hash": "6330cf26dab6998355efdad4edbaa83be6893d9df29d93a9a14cd15719db84d8"
         }
     },
     "pre_install": [
