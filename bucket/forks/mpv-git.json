@@ -1,5 +1,5 @@
 {
-    "version": "20250726",
+    "version": "20250727",
     "description": "mpv is a free media player for the command line that supports a wide variety of media file formats, audio and video codecs, and subtitle types (AVX2; Nightly)",
     "homepage": "https://mpv.io",
     "license": "GPL-2.0-or-later OR LGPL-2.1-or-later",
@@ -16,16 +16,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20250726/mpv-x86_64-v3-20250726-git-b47fd28.7z",
-            "hash": "e3fb731b762babc1f8122991def136ae7bcc0e9c7b2fa0c0b2a423170222ad2c"
+            "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20250727/mpv-x86_64-v3-20250727-git-73c2118.7z",
+            "hash": "f0c278fc25ecd1ca13cccf5e59974900f08dd13044e9eb443884ffeb5fa48b25"
         },
         "32bit": {
-            "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20250726/mpv-i686-20250726-git-b47fd28.7z",
-            "hash": "ef1cf6ec4193dcdb6469c0f87b1b53bcbdba0f589b112150da6eb9f04362184d"
+            "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20250727/mpv-i686-20250727-git-73c2118.7z",
+            "hash": "30fd9754c85d63d5de1cb7eac58be3567bcb5e182164aaaadee880eb3e27a620"
         },
         "arm64": {
-            "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20250726/mpv-aarch64-20250726-git-b47fd28.7z",
-            "hash": "e8c00f6b099dce217fc3ffbb45eb14d6b58258b906cee11525b5cd7bad33bef5"
+            "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20250727/mpv-aarch64-20250727-git-73c2118.7z",
+            "hash": "19cab3e07ebad269ef19a5ce416b3715c96287f88cab067e55026a8e69fede3b"
         }
     },
     "pre_install": "Remove-Item \"$dir\\updater.bat\", \"$dir\\installer\\updater.ps1\"",
