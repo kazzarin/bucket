@@ -1,10 +1,10 @@
 {
-    "version": "2.64.5",
+    "version": "2.64.6",
     "description": "Inno Setup Unpacker (Unicode)",
     "homepage": "https://github.com/jrathlev/InnoUnpacker-Windows-GUI/tree/master/innounp-2",
     "license": "GPL-3.0-only",
-    "url": "https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/33402b04dfedd3464dbe8a239ec7d9b12e082d32/innounp-2/bin/innounp-2.zip",
-    "hash": "649abef7568e8605228874f808b0c6b194e12fb321c847e84a266c5925fe1503",
+    "url": "https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/9b163e217b1b5e16e1c071d403c10edfcb006a82/innounp-2/bin/innounp-2.zip",
+    "hash": "c55be2165e9302730f3099d337a05f380f4d3010ce2620cff3122670750c3e70",
     "bin": "innounp.exe",
     "checkver": {
         "script": [
