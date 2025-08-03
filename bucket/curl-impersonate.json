@@ -1,21 +1,21 @@
 {
-    "version": "1.1.2",
+    "version": "1.2.0",
     "description": "A special build of curl that can impersonate the four major browsers",
     "homepage": "https://github.com/lexiforest/curl-impersonate",
     "license": "MIT",
     "notes": "Shims only added for latest versions",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v1.1.2/libcurl-impersonate-v1.1.2.x86_64-win32.tar.gz",
-            "hash": "a0741bb69f26bb6a2bba438a6928692fc71d57ad87d91ff77ef6786e137898a3"
+            "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v1.2.0/libcurl-impersonate-v1.2.0.x86_64-win32.tar.gz",
+            "hash": "f83c352e73deae97650eb1bec00098d697a12a7e213628a1b80c74f8a526f9dd"
         },
         "32bit": {
-            "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v1.1.2/libcurl-impersonate-v1.1.2.i686-win32.tar.gz",
-            "hash": "53b1c6566f2dc6bcdb3bd7adac4aa3aa05e435b54ff77e170b58432c0bb4667f"
+            "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v1.2.0/libcurl-impersonate-v1.2.0.i686-win32.tar.gz",
+            "hash": "d319448e396d0878a490f26ca21d194ef22149cf8fd4ab5c76e7a767d2d1618e"
         },
         "arm64": {
-            "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v1.1.2/libcurl-impersonate-v1.1.2.arm64-win32.tar.gz",
-            "hash": "e73867919c9b6f712447acd8caecdb34b9326f18dabd0ec77f1354faa42dc520"
+            "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v1.2.0/libcurl-impersonate-v1.2.0.arm64-win32.tar.gz",
+            "hash": "389085ae0f84562c54cb3fdc95877127df299e640f69121a301224961bdd6a67"
         }
     },
     "extract_dir": "./bin",
