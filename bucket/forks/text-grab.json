@@ -1,0 +1,41 @@
+{
+    "version": "4.9.4",
+    "description": "Minimal optical character recognition (OCR) utility which makes all visible text available to be copied",
+    "homepage": "https://github.com/TheJoeFin/Text-Grab",
+    "license": "MIT",
+    "suggest": {
+        ".NET Desktop Runtime": "extras/windowsdesktop-runtime"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/TheJoeFin/Text-Grab/releases/download/v4.9.4/Text-Grab.exe",
+            "hash": "6744e4f5b4d26e81450e607b9d780d2aba8e05b92f4f0538cc93c0898b3c8e86"
+        },
+        "arm64": {
+            "url": "https://github.com/TheJoeFin/Text-Grab/releases/download/v4.9.4/Text-Grab-arm64.exe#/Text-Grab.exe",
+            "hash": "9b3a4b54d0a2293ff675e921feb2c27c76b43846e373cb81d1ddc7b94addd197"
+        }
+    },
+    "bin": "Text-Grab.exe",
+    "shortcuts": [
+        [
+            "Text-Grab.exe",
+            "Text Grab"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/TheJoeFin/Text-Grab/releases/download/v$version/Text-Grab.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/TheJoeFin/Text-Grab/releases/download/v$version/Text-Grab-arm64.exe#/Text-Grab.exe"
+            }
+        },
+        "hash": {
+            "url": "https://api.github.com/repos/TheJoeFin/Text-Grab/releases",
+            "regex": "(?s).*sha256:$sha256.*?$url"
+        }
+    }
+}
