@@ -1,17 +1,17 @@
 {
-    "version": "15.1.0-13.0.0-r4",
+    "version": "15.2.0-13.0.0-r1",
     "description": "MinGW-w64 with GCC toolchain (MSVCRT)",
     "homepage": "https://winlibs.com",
     "license": "GPL-3.0-or-later AND ZPL-2.1 AND BSD-2-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/15.1.0posix-13.0.0-msvcrt-r4/winlibs-x86_64-posix-seh-gcc-15.1.0-mingw-w64msvcrt-13.0.0-r4.7z",
-            "hash": "sha512:f385751c8de1ee0d9ac6b0adf89fa330c92ba8013e4589996e50e602a0b58a83ebd3dbd707a913f8d12dd98b58e090c5ffd3cf28fe357aaa9c46ce9cd4959423",
+            "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/15.2.0posix-13.0.0-msvcrt-r1/winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64msvcrt-13.0.0-r1.7z",
+            "hash": "sha512:22b87bd94f98944e70aafcd562933624e741d996a97ad754132f3533d50eb9554f780e38bc6ce7c8b9f640ceafa1c1b832dd6c96f2cc175df6d9f8de72763ea1",
             "extract_dir": "mingw64"
         },
         "32bit": {
-            "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/15.1.0posix-13.0.0-msvcrt-r4/winlibs-i686-posix-dwarf-gcc-15.1.0-mingw-w64msvcrt-13.0.0-r4.7z",
-            "hash": "sha512:3c2e3f7ff79c70dfe9fd296cdcf6c7d9bfd833d431e48097f78eb1ade2fbe4f02b492ba3508a90016e7242132280df79058b05498319175680cdcabbda19babd",
+            "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/15.2.0posix-13.0.0-msvcrt-r1/winlibs-i686-posix-dwarf-gcc-15.2.0-mingw-w64msvcrt-13.0.0-r1.7z",
+            "hash": "sha512:cc2d48f101e22a58497aaff30db56be515eb5295bf9e707f4af834b92fe2514d17c66ca6fd6d874bf31f26bbb58e4ef686cf63182882a44b87a7d36c89e2747f",
             "extract_dir": "mingw32"
         }
     },
