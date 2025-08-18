@@ -32,10 +32,6 @@
             "arm64": {
                 "url": "https://github.com/TheJoeFin/Text-Grab/releases/download/v$version/Text-Grab-arm64.exe#/Text-Grab.exe"
             }
-        },
-        "hash": {
-            "url": "https://api.github.com/repos/TheJoeFin/Text-Grab/releases",
-            "regex": "(?s).*sha256:$sha256.*?$url"
         }
     }
 }

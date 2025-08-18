@@ -28,11 +28,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/marticliment/UniGetUI/releases/download/$version/UniGetUI.Installer.exe",
-                "hash": {
-                    "url": "https://api.github.com/repos/marticliment/UniGetUI/releases",
-                    "regex": "$sha256"
-                }
+                "url": "https://github.com/marticliment/UniGetUI/releases/download/$version/UniGetUI.Installer.exe"
             }
         }
     }

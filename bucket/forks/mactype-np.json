@@ -45,10 +45,6 @@
         "regex": "tag/(?<tag>v?[\\d.]+).*?\"name\":.*?([\\d.]+).*?MacTypeInstaller_(?<file>[\\d.]+)\\.exe"
     },
     "autoupdate": {
-        "url": "https://github.com/snowie2000/mactype/releases/download/$matchTag/MacTypeInstaller_$matchFile.exe",
-        "hash": {
-            "url": "https://api.github.com/repos/snowie2000/mactype/releases",
-            "regex": "(?s).*sha256:$sha256.*?$url"
-        }
+        "url": "https://github.com/snowie2000/mactype/releases/download/$matchTag/MacTypeInstaller_$matchFile.exe"
     }
 }

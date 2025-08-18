@@ -64,11 +64,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/PCSX2/pcsx2/releases/download/v$version/pcsx2-v$version-windows-x64-Qt.7z",
-                "hash": {
-                    "url": "https://api.github.com/repos/PCSX2/pcsx2/releases",
-                    "regex": "(?s).*sha256:$sha256.*?$url"
-                }
+                "url": "https://github.com/PCSX2/pcsx2/releases/download/v$version/pcsx2-v$version-windows-x64-Qt.7z"
             }
         }
     }

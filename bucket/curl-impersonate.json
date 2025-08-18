@@ -43,10 +43,6 @@
             "arm64": {
                 "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v$version/libcurl-impersonate-v$version.arm64-win32.tar.gz"
             }
-        },
-        "hash": {
-            "url": "https://api.github.com/repos/lexiforest/curl-impersonate/releases",
-            "regex": "(?s).*sha256:$sha256.*?$url"
         }
     }
 }

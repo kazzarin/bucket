@@ -38,10 +38,6 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/streamlink/windows-builds/releases/download/$version/streamlink-$version-$matchPython-x86_64.zip",
-                "hash": {
-                    "url": "https://api.github.com/repos/streamlink/windows-builds/releases",
-                    "regex": "(?s).*sha256:$sha256.*?$url"
-                },
                 "extract_dir": "streamlink-$version-$matchPython-x86_64"
             }
         }
