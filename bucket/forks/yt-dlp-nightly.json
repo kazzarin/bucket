@@ -1,5 +1,5 @@
 {
-    "version": "2025.09.10.232823",
+    "version": "2025.09.11.232836",
     "description": "yt-dlp is a feature-rich command-line audio/video downloader (Nightly)",
     "homepage": "https://github.com/yt-dlp/yt-dlp",
     "license": "Unlicense",
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.09.10.232823/yt-dlp.exe",
-            "hash": "sha512:445ace629643aefeb069c938227e281bc38ee9186ae5d36a889f5b4f65e4ed274914bb92f40a0b6795517bf99230ed3e0ba2bf501933116422cb271e0c3d2ae0"
+            "url": "https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.09.11.232836/yt-dlp.exe",
+            "hash": "sha512:74de816b08f6466b2d4861261d6a025e14dfd9de3a6f4e68a886df1cda2e6d2752f82bb0d5b152f7e991df4470822bf04d4bfa4d72f75f291aba21daad07a6a4"
         },
         "32bit": {
-            "url": "https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.09.10.232823/yt-dlp_x86.exe#/yt-dlp.exe",
-            "hash": "sha512:a7626fa28f94805c914dbb272774335df84d9a7cfb13ce0c409a0ee8b74bcbc82857cbc6708669ad95db96e50a1c7f2c6aa1e58f207a348336ccae7844bedcf1"
+            "url": "https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.09.11.232836/yt-dlp_x86.exe#/yt-dlp.exe",
+            "hash": "sha512:75ace78815b45e3e48df5289037a751c35728537013fb70ac2cb02bf9b4d588dc5e556619783af4a2d9e0f89eee43a27f6c33f70630826dff7c228e2482bf97f"
         },
         "arm64": {
-            "url": "https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.09.10.232823/yt-dlp_arm64.exe#/yt-dlp.exe",
-            "hash": "sha512:0072bbf950afde8882c29b57116f4691850f39a33f4a58ea3652c0fe35c0dea40769c939029253cd8f584cac57373c41346f66268d4a4d3081aceef3e816491d"
+            "url": "https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.09.11.232836/yt-dlp_arm64.exe#/yt-dlp.exe",
+            "hash": "sha512:5e11554aca428a52a8c3c3c0de338615fa4fc0ff08c19b5fa1a858d2ce008222e71aeacbecc58dc343762c50730d5dc6914b43c7eb6918878b5623d5d307701b"
         }
     },
     "pre_install": "if (-not (Test-Path \"$persist_dir\\yt-dlp.conf\")) { New-Item \"$dir\\yt-dlp.conf\" -ItemType file | Out-Null }",
