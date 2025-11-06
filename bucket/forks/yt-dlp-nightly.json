@@ -4,6 +4,7 @@
     "homepage": "https://github.com/yt-dlp/yt-dlp",
     "license": "Unlicense",
     "suggest": {
+        "deno": "main/deno",
         "ffmpeg": "versions/ffmpeg-gyan-nightly"
     },
     "architecture": {
