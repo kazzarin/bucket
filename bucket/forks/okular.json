@@ -1,12 +1,12 @@
 {
-    "version": "25.08-6857",
+    "version": "25.12-6917",
     "description": "Universal document viewer",
     "homepage": "https://okular.kde.org",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.kde.org/ci-builds/graphics/okular/release-25.08/windows/okular-release_25.08-6857-windows-cl-msvc2022-x86_64.7z",
-            "hash": "0b4018865e9106a75524151f75d1a57c507bffd8892a77c0da82da773045b246"
+            "url": "https://cdn.kde.org/ci-builds/graphics/okular/release-25.12/windows/okular-release_25.12-6917-windows-cl-msvc2022-x86_64.7z",
+            "hash": "85a243f4a6cf56ca7b8321e88d5e61ee91f5bc0d15d0c7d2793a3da6807ace16"
         }
     },
     "bin": "bin\\okular.exe",
