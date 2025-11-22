@@ -1,23 +1,23 @@
 {
-    "version": "0.46.0",
+    "version": "0.47.0",
     "description": "An idiomatic, lean, fast & safe pure Rust implementation of Git (Rust-only variant)",
     "homepage": "https://github.com/GitoxideLabs/gitoxide",
     "license": "Apache-2.0 OR MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/GitoxideLabs/gitoxide/releases/download/v0.46.0/gitoxide-max-pure-v0.46.0-x86_64-pc-windows-msvc.zip",
-            "hash": "65be6644038866ea7aae101fbb4bda9815710f9b8a7a5674367f7e74bfe6d534",
-            "extract_dir": "gitoxide-max-pure-v0.46.0-x86_64-pc-windows-msvc"
+            "url": "https://github.com/GitoxideLabs/gitoxide/releases/download/v0.47.0/gitoxide-max-pure-v0.47.0-x86_64-pc-windows-msvc.zip",
+            "hash": "b47aa59faec66e5073ce53f953e659cab6694eb044a71c7f1c17a21dd192a3f7",
+            "extract_dir": "gitoxide-max-pure-v0.47.0-x86_64-pc-windows-msvc"
         },
         "32bit": {
-            "url": "https://github.com/GitoxideLabs/gitoxide/releases/download/v0.46.0/gitoxide-max-pure-v0.46.0-i686-pc-windows-msvc.zip",
-            "hash": "fe4652ac73e87fd8145057745677e2d39ee09ece47dfcf73ce8dc3536b13272c",
-            "extract_dir": "gitoxide-max-pure-v0.46.0-i686-pc-windows-msvc"
+            "url": "https://github.com/GitoxideLabs/gitoxide/releases/download/v0.47.0/gitoxide-max-pure-v0.47.0-i686-pc-windows-msvc.zip",
+            "hash": "2013a533c9833575d2c633f834e45d33426423e4b80af2c534c8f128281aba5a",
+            "extract_dir": "gitoxide-max-pure-v0.47.0-i686-pc-windows-msvc"
         },
         "arm64": {
-            "url": "https://github.com/GitoxideLabs/gitoxide/releases/download/v0.46.0/gitoxide-max-pure-v0.46.0-aarch64-pc-windows-msvc.zip",
-            "hash": "19df3741a23b9f0c7a3471775ea7e51d1a8e0336b8eb258c75a3ff02cbddfe82",
-            "extract_dir": "gitoxide-max-pure-v0.46.0-aarch64-pc-windows-msvc"
+            "url": "https://github.com/GitoxideLabs/gitoxide/releases/download/v0.47.0/gitoxide-max-pure-v0.47.0-aarch64-pc-windows-msvc.zip",
+            "hash": "c61fabf44ef606da1612dd00a7b57dafe60e7bc130003b80a1b725e7220eaeca",
+            "extract_dir": "gitoxide-max-pure-v0.47.0-aarch64-pc-windows-msvc"
         }
     },
     "bin": [
