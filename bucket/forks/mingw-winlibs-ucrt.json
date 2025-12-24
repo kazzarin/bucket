@@ -1,17 +1,17 @@
 {
-    "version": "15.2.0-13.0.0-r4",
+    "version": "15.2.0-13.0.0-r5",
     "description": "MinGW-w64 with GCC toolchain (UCRT)",
     "homepage": "https://winlibs.com",
     "license": "GPL-3.0-or-later AND ZPL-2.1 AND BSD-2-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/15.2.0posix-13.0.0-ucrt-r4/winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-13.0.0-r4.7z",
-            "hash": "sha512:a3463fd1b43695a66a32bdbed0f760086694c0a6d8707bd00fc5ee48b04d338832d20a7fcb56178bbcaff63219146153701c483ac97bd17aa41ae368ca5339f0",
+            "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/15.2.0posix-13.0.0-ucrt-r5/winlibs-x86_64-posix-seh-gcc-15.2.0-mingw-w64ucrt-13.0.0-r5.7z",
+            "hash": "sha512:3149d0996eb8bb8356f85788ec6f0be9efb2902aea4a59987ae41f6b134b386d603645e824afcc0a7449794ef9c0d681b963a7ddb3e6e1d9ea773502e765a73e",
             "extract_dir": "mingw64"
         },
         "32bit": {
-            "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/15.2.0posix-13.0.0-ucrt-r4/winlibs-i686-posix-dwarf-gcc-15.2.0-mingw-w64ucrt-13.0.0-r4.7z",
-            "hash": "sha512:bb9acf79a798b8747e0d349e2ca41dcb9684f144bb809ba2f8679aa66d6b522054a0c4cfcc7c0700cbda719f52bb03230b1b4fe7a9895e42a311083e56840cc5",
+            "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/15.2.0posix-13.0.0-ucrt-r5/winlibs-i686-posix-dwarf-gcc-15.2.0-mingw-w64ucrt-13.0.0-r5.7z",
+            "hash": "sha512:e1771c35cc8b4501141c9d56f55dcffeb3f268de429512a57ff9d005697e3450628f73b22a365fc3ad61b73c42e56a9500f42eb72416aa39a9f0f37a82dc146a",
             "extract_dir": "mingw32"
         }
     },
