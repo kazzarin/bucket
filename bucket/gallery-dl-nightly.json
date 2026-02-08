@@ -6,11 +6,11 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/gdl-org/builds/releases/download/2026.02.08/gallery-dl_windows.exe#/gallery-dl.exe",
-            "hash": "9182629c72e6165a2e3dc342c5325a5c0152e7f138864db61a2ad75ed6899469"
+            "hash": "8315a1ac6c36c99ba29f11c89c54ef362e1bf5837ff1f4db574ecf1ca6224135"
         },
         "32bit": {
             "url": "https://github.com/gdl-org/builds/releases/download/2026.02.08/gallery-dl_windows_x86.exe#/gallery-dl.exe",
-            "hash": "67a69e99b7c6ee6d6ed4b235b59d67dc9fc24d469fa10456fa2c7af2b057c31e"
+            "hash": "261d6c44d90367cedd5bb6ca7d0d25ef52f29692414e9b74e750dc6203c4df9d"
         }
     },
     "pre_install": "if (-not (Test-Path \"$persist_dir\\gallery-dl.conf\")) { Set-Content \"$dir\\gallery-dl.conf\" '{}' -Encoding Ascii | Out-Null }",
