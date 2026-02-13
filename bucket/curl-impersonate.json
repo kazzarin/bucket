@@ -7,15 +7,15 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v1.4.4/libcurl-impersonate-v1.4.4.x86_64-win32.tar.gz",
-            "hash": "dfa5585d80b05e8255d77f2784e5b8132ca8a123c20c4712f9cea6dcc95b6abf"
+            "hash": "bd4bade1eeb0fc01110bceba6b7074619aa683d5edbc207141b026c4e020ba62"
         },
         "32bit": {
             "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v1.4.4/libcurl-impersonate-v1.4.4.i686-win32.tar.gz",
-            "hash": "41d6168d752ee3f12a432b20ba197372d928e72555100f73107c09880f3021a3"
+            "hash": "725834798ab25f5c66884b090b9cfa728912fcd77091083439a4761e842bbf51"
         },
         "arm64": {
             "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v1.4.4/libcurl-impersonate-v1.4.4.arm64-win32.tar.gz",
-            "hash": "5c641379ea4b22b62e10d94272c84498791adeca3d8452ca6b4ecdcafa0e3731"
+            "hash": "0c8dfd3fd23c28a34dd9c88a5d4eedf9f08ffd522e08cd492042ad53b7cad69b"
         }
     },
     "extract_dir": "./bin",
