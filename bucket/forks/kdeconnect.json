@@ -1,12 +1,12 @@
 {
-    "version": "26.04-5985",
+    "version": "26.04-6002",
     "description": "Communications and data transfer between devices over local networks",
     "homepage": "https://kdeconnect.kde.org",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.kde.org/ci-builds/network/kdeconnect-kde/release-26.04/windows/kdeconnect-kde-release_26.04-5985-windows-cl-msvc2022-x86_64.7z",
-            "hash": "848846d5d2655fcc766fc5571e5559698e9b3983e4ba3ba47f2a483f23672cc6"
+            "url": "https://cdn.kde.org/ci-builds/network/kdeconnect-kde/release-26.04/windows/kdeconnect-kde-release_26.04-6002-windows-cl-msvc2022-x86_64.7z",
+            "hash": "13ab409f57e3b2001b98743b38e2b7a18aa12758b7294c6c47383883898e227a"
         }
     },
     "bin": "bin\\kdeconnect-cli.exe",
