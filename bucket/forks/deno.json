@@ -13,7 +13,14 @@
             "hash": "5693b3107fa22476f007bdb61f0157f16870edd56a636b95eccfdcbec9c82db6"
         }
     },
-    "bin": "deno.exe",
+    "bin": [
+        "deno.exe",
+        [
+            "deno.exe",
+            "dx",
+            "x"
+        ]
+    ],
     "checkver": {
         "url": "https://dl.deno.land/release-latest.txt",
         "regex": "v([\\d.]+)"
