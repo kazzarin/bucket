@@ -1,18 +1,18 @@
 {
-    "version": "2025.3.1.5",
+    "version": "2025.3.4.1",
     "description": "The official IDE for Android development, which includes everything you need to build Android apps (Canary)",
     "homepage": "https://developer.android.com/studio/preview",
     "license": {
         "identifier": "Freeware",
-        "url": "https://developer.android.com/studio/terms.html"
+        "url": "https://developer.android.com/studio/terms"
     },
     "suggest": {
         "Android SDK": "main/android-clt"
     },
     "architecture": {
         "64bit": {
-            "url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2025.3.1.5/android-studio-2025.3.1.5-windows.zip",
-            "hash": "2027d55cd36662bbe59bef5803998e0080872459c64d09444d6a079c9bb3e6ae",
+            "url": "https://edgedl.me.gvt1.com/android/studio/ide-zips/2025.3.4.1/android-studio-panda4-canary1-windows.zip",
+            "hash": "a9a409e7dd3457802875d824d83565232051e492903a43bca11509162d66cc00",
             "shortcuts": [
                 [
                     "bin\\studio64.exe",
@@ -24,13 +24,13 @@
     "extract_dir": "android-studio",
     "checkver": {
         "url": "https://jb.gg/android-studio-releases-list.json",
-        "jsonpath": "$.content.item[?(@.channel == 'Canary')].version",
-        "regex": "([\\d.]+)"
+        "jsonpath": "$.content.item[?(@.channel == 'Canary')].download",
+        "regex": "ide-zips/([\\d.]+)/android-studio-(?<name>[\\w-]+)-windows\\.zip"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/$version/android-studio-$version-windows.zip"
+                "url": "https://edgedl.me.gvt1.com/android/studio/ide-zips/$version/android-studio-$matchName-windows.zip"
             }
         },
         "hash": {
