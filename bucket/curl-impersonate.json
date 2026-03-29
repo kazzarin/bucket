@@ -24,9 +24,9 @@
             "curl.exe",
             "curl-impersonate"
         ],
-        "curl_chrome136.bat",
+        "curl_chrome146.bat",
         "curl_chrome131_android.bat",
-        "curl_firefox135.bat",
+        "curl_firefox147.bat",
         "curl_safari260.bat",
         "curl_safari260_ios.bat",
         "curl_tor145.bat"
