@@ -6,12 +6,12 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/16.1.0posix-14.0.0-msvcrt-r1/winlibs-x86_64-posix-seh-gcc-16.1.0-mingw-w64msvcrt-14.0.0-r1.7z",
-            "hash": "sha512:c759dc6d6eff4b7d73bca5901c5eafd33e0180611c8fef45c64a026d1f4d50cad1e2f64dc89089300c10b62adfe8691df07765fdffe3c87e4a424b9e31301698",
+            "hash": "sha512:735430d17f605409b698f7b5c49f59a951bb4e30dbe9625b4481ab98994de2977ef33f2bdc718deba962484d89f66a4a755c62edbe321592d2c206187a4ee625",
             "extract_dir": "mingw64"
         },
         "32bit": {
             "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/16.1.0posix-14.0.0-msvcrt-r1/winlibs-i686-posix-dwarf-gcc-16.1.0-mingw-w64msvcrt-14.0.0-r1.7z",
-            "hash": "sha512:8b15b7d832e1fff1b300713c7ff0acc1ae0438ea3ba416621ce8e86fd1b68512fb1931bd2195d234240b1a99591cca8e7edee5ec6774fb7088923a46633a3f4e",
+            "hash": "sha512:63e02ebeae5b64a1bf4de645b96e6b3fdb58d340c11c83d493dacf8fa8a907828c3473054fabd67f30d4955c32f34789840bfceb3b70aefdcac4c801093fd980",
             "extract_dir": "mingw32"
         }
     },
