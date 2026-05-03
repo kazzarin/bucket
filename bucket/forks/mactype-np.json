@@ -42,9 +42,9 @@
     ],
     "checkver": {
         "github": "https://github.com/snowie2000/mactype",
-        "regex": "tag/(?<tag>v?[\\d.]+).*?\"name\":.*?([\\d.]+).*?MacTypeInstaller_(?<file>[\\d.]+)\\.exe"
+        "regex": "v1\\.([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/snowie2000/mactype/releases/download/$matchTag/MacTypeInstaller_$matchFile.exe"
+        "url": "https://github.com/snowie2000/mactype/releases/download/v1.$version/MacTypeInstaller_$version.exe"
     }
 }
