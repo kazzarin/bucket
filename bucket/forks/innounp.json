@@ -3,25 +3,15 @@
     "description": "Inno Setup Unpacker (Unicode)",
     "homepage": "https://github.com/jrathlev/InnoUnpacker-Windows-GUI/tree/master/innounp-2",
     "license": "GPL-3.0-only",
-    "url": "https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/4f37232766a9227d899e9a15a21e1301c0b7a36d/innounp-2/bin/innounp-2.zip",
+    "url": "https://github.com/jrathlev/InnoUnpacker-Windows-GUI/releases/download/ui_2_2_9/innounp-2.zip",
     "hash": "1439f8d9e24b19e7d0b31b9c427ba4533387522a370c39280f17d3371eb7febf",
     "bin": "innounp.exe",
     "checkver": {
-        "script": [
-            "$verRes = $(Invoke-WebRequest 'https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/master/innounp-2/docs/innounp.htm').Content",
-            "$verRes -match \"Version ([\\d.]+) - Unicode\"",
-            "$ver = $Matches.1",
-            "$auth = Get-GitHubToken",
-            "$head = @{}",
-            "if($auth) { $head.add('authorization', \"Bearer $auth\") }",
-            "$url = 'https://api.github.com/repos/jrathlev/InnoUnpacker-Windows-GUI/commits?path=innounp-2/bin/innounp-2.zip'",
-            "$commitRes = $(Invoke-WebRequest -Headers $head $url).Content | ConvertFrom-Json",
-            "$commit = $commitRes[0].sha",
-            "\"$ver-$commit\""
-        ],
-        "regex": "([\\d.]+)-(?<commit>[a-fA-F0-9]{40})"
+        "github": "https://github.com/jrathlev/InnoUnpacker-Windows-GUI",
+        "jsonpath": "$..['tag_name','body']",
+        "regex": "(?s)(?<tag>[ui]+[\\d_]+).*innounp\\.exe.*?([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://raw.githubusercontent.com/jrathlev/InnoUnpacker-Windows-GUI/$matchCommit/innounp-2/bin/innounp-2.zip"
+        "url": "https://github.com/jrathlev/InnoUnpacker-Windows-GUI/releases/download/$matchTag/innounp-2.zip"
     }
 }
