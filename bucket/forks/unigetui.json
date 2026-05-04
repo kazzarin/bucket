@@ -1,12 +1,12 @@
 {
-    "version": "v2026.1.7",
+    "version": "v2026.1.8",
     "description": "A graphical interface for your package managers (Beta)",
     "homepage": "https://www.marticliment.com/unigetui/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/marticliment/UniGetUI/releases/download/v2026.1.7/UniGetUI.Installer.exe",
-            "hash": "2112a4f447c3489392493b0b043c61001be55e2f9bba755541ae1e813bb472eb"
+            "url": "https://github.com/marticliment/UniGetUI/releases/download/v2026.1.8/UniGetUI.Installer.exe",
+            "hash": "00c46aa2d20582016afa9eff64a0b141e0b2d413b9ff944375105ac6bf40b8ce"
         }
     },
     "innosetup": true,
