@@ -19,7 +19,7 @@
     },
     "bin": "livestream_dl.exe",
     "checkver": {
-        "url": "https://api.github.com/repos/CanOfSocks/livestream_dl/releases",
+        "github": "https://api.github.com/repos/CanOfSocks/livestream_dl/releases",
         "jsonpath": "$[0].tag_name",
         "regex": "v([\\d.-]+)"
     },

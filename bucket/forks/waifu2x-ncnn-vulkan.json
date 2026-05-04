@@ -12,7 +12,7 @@
     },
     "bin": "waifu2x-ncnn-vulkan.exe",
     "checkver": {
-        "url": "https://api.github.com/repos/nihui/waifu2x-ncnn-vulkan/releases",
+        "github": "https://api.github.com/repos/nihui/waifu2x-ncnn-vulkan/releases",
         "jsonpath": "$[0].tag_name",
         "regex": "(\\d+)"
     },

@@ -53,7 +53,7 @@
     ],
     "persist": "data",
     "checkver": {
-        "url": "https://api.github.com/repos/kazzarin/AlpineWSL/releases/latest",
+        "github": "https://api.github.com/repos/kazzarin/AlpineWSL/releases/latest",
         "jsonpath": "$.tag_name",
         "regex": "([\\d.-]+)"
     },

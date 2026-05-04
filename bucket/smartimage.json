@@ -17,7 +17,7 @@
     "bin": "SmartImage.exe",
     "persist": "SmartImage.dll.config",
     "checkver": {
-        "url": "https://api.github.com/repos/Decimation/SmartImage/releases",
+        "github": "https://api.github.com/repos/Decimation/SmartImage/releases",
         "jsonpath": "$..tag_name",
         "regex": "v([\\d.]+)-rdx"
     },

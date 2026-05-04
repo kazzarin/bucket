@@ -11,7 +11,7 @@
     },
     "bin": "hq.exe",
     "checkver": {
-        "url": "https://api.github.com/repos/orf/html-query/releases",
+        "github": "https://api.github.com/repos/orf/html-query/releases",
         "jsonpath": "$..browser_download_url",
         "regex": "html-query-v([\\d.]+)/hq-Windows"
     },

@@ -44,7 +44,7 @@
         "igconfig.json"
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/d2phap/ImageGlass/releases",
+        "github": "https://api.github.com/repos/d2phap/ImageGlass/releases",
         "jsonpath": "$[?(@.prerelease == true)]..['browser_download_url']",
         "regex": "/ImageGlass_Moon_([\\d.]+)_(?<name>[\\w-]+)_x64"
     },
