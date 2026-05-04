@@ -26,8 +26,7 @@
     "persist": "Plugins",
     "checkver": {
         "github": "https://api.github.com/repos/DevToys-app/DevToys/releases",
-        "jsonpath": "$[0].tag_name",
-        "regex": "v([\\d.]+)"
+        "jsonpath": "$[0].tag_name"
     },
     "autoupdate": {
         "architecture": {
