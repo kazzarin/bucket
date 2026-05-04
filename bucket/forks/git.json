@@ -51,10 +51,6 @@
             "arm64": {
                 "url": "https://github.com/git-for-windows/git/releases/download/v$matchTag/PortableGit-$version-arm64.7z.exe#/dl.7z"
             }
-        },
-        "hash": {
-            "url": "https://api.github.com/repos/git-for-windows/git/releases",
-            "regex": "(?s)$basename \\| $sha256"
         }
     }
 }
