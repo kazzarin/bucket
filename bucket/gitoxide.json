@@ -24,7 +24,11 @@
         "ein.exe",
         "gix.exe"
     ],
-    "checkver": "github",
+    "checkver": {
+        "github": "https://api.github.com/repos/GitoxideLabs/gitoxide/releases",
+        "jsonpath": "$[*].tag_name",
+        "regex": "\"v([\\d.]+)"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
