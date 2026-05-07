@@ -9,7 +9,7 @@ jobs:
     name: Excavate
     runs-on: windows-2025
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Excavate
         uses: ScoopInstaller/GithubActions@main
         env:
