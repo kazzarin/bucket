@@ -1,5 +1,5 @@
 {
-    "version": "20260518",
+    "version": "2026.05.17.059bc7025b",
     "description": "mpv is a free media player for the command line that supports a wide variety of media file formats, audio and video codecs, and subtitle types (AVX2; Nightly)",
     "homepage": "https://mpv.io",
     "license": "GPL-2.0-or-later OR LGPL-2.1-or-later",
@@ -16,16 +16,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20260518/mpv-x86_64-v3-20260518-git-059bc70.7z",
-            "hash": "568fe5dbdcb62b81bb5537f40f5c0e0f8290b246916e9ce113f92f5e7f19c829"
-        },
-        "32bit": {
-            "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20260518/mpv-i686-20260518-git-059bc70.7z",
-            "hash": "fe314bc81f6027da82d97b4a31e333cd6bd470f28e65f8810db8e91e392a5ac5"
+            "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2026-05-17-059bc7025b/mpv-x86_64-v3-20260517-git-059bc7025b.7z",
+            "hash": "fef9a19bdd541efee509984dee91e159d1b2ba3ffc3e709cf5502dd89332f91a"
         },
         "arm64": {
-            "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20260518/mpv-aarch64-20260518-git-059bc70.7z",
-            "hash": "360ea26f47f71144fe6dec2125d8ae8393e0743d5c6a6af70dcbdf2d8cdff8f2"
+            "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2026-05-17-059bc7025b/mpv-aarch64-20260517-git-059bc7025b.7z",
+            "hash": "0565b543871ad6a4f3422907419ba71e3c0c1ad39d9bd35aa1b69fcb79ddad01"
         }
     },
     "pre_install": "Remove-Item \"$dir\\updater.bat\", \"$dir\\installer\\updater.ps1\"",
@@ -38,20 +34,17 @@
     ],
     "persist": "portable_config",
     "checkver": {
-        "github": "https://github.com/shinchiro/mpv-winbuild-cmake",
-        "jsonpath": "$..browser_download_url",
-        "regex": "mpv-x86_64-v3-(\\d+)-git-(?<commit>[\\da-f]+)\\.7z"
+        "github": "https://github.com/zhongfly/mpv-winbuild",
+        "regex": "(\\d{4})-(\\d{2})-(\\d{2})-([\\da-f]+)",
+        "replace": "${1}.${2}.${3}.${4}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/$version/mpv-x86_64-v3-$version-git-$matchCommit.7z"
-            },
-            "32bit": {
-                "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/$version/mpv-i686-$version-git-$matchCommit.7z"
+                "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/$dashVersion/mpv-x86_64-v3-$majorVersion$minorVersion$patchVersion-git-$buildVersion.7z"
             },
             "arm64": {
-                "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/$version/mpv-aarch64-$version-git-$matchCommit.7z"
+                "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/$dashVersion/mpv-aarch64-$majorVersion$minorVersion$patchVersion-git-$buildVersion.7z"
             }
         }
     }
