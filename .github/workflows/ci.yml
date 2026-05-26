@@ -1,4 +1,4 @@
-name: Tests
+name: CI
 
 on:
   push:
@@ -8,28 +8,36 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
-  test_pwsh:
-    name: PowerShell
+  test:
+    name: Test
     runs-on: windows-2025
+    strategy:
+      matrix:
+        shell: [pwsh]
+    defaults:
+      run:
+        shell: ${{ matrix.shell }}
     steps:
       - name: Checkout Bucket
         uses: actions/checkout@v6
         with:
           fetch-depth: 2
-          path: my_bucket
+          path: 'my_bucket'
       - name: Checkout Scoop
         uses: actions/checkout@v6
         with:
           repository: ScoopInstaller/Scoop
-          path: scoop_core
-      - name: Init Test Suite
-        uses: potatoqualitee/psmodulecache@v6.2.1
+          path: 'scoop_core'
+      - name: Install and cache test dependencies
+        uses: Knightly1/psmodulecache@9ac0563324860dd8b9c27e9c4f32e9b5970c579d
         with:
-          modules-to-cache: BuildHelpers
-          shell: pwsh
-      - name: Test Bucket
-        shell: pwsh
+          modules-to-cache: BuildHelpers, Pester
+          shell: ${{ matrix.shell }}
+      - name: Run tests
         run: |
           $env:SCOOP_HOME="$(Convert-Path '.\scoop_core')"
           .\my_bucket\bin\test.ps1
