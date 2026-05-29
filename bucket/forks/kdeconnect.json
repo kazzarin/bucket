@@ -26,12 +26,12 @@
             "$build = $Matches.1",
             "\"$major-$build\""
         ],
-        "regex": "((?<release>[\\d.]+)-\\d+)"
+        "regex": "([\\d.-]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://cdn.kde.org/ci-builds/network/kdeconnect-kde/release-$matchRelease/windows/kdeconnect-kde-release_$version-windows-cl-msvc2022-x86_64.7z"
+                "url": "https://cdn.kde.org/ci-builds/network/kdeconnect-kde/release-$majorVersion.$minorVersion/windows/kdeconnect-kde-release_$version-windows-cl-msvc2022-x86_64.7z"
             }
         },
         "hash": {
