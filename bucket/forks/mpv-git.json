@@ -17,11 +17,11 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2026-05-31-74271a7d80/mpv-x86_64-v3-20260531-git-74271a7d80.7z",
-            "hash": "3395b6bef77b144c5d1469906aad02cb9814004ced645a126cb01a05518dec47"
+            "hash": "256802697839f0a6ebc7d47cb88fecb209c3601b49abdcfebda85b6d4998aa16"
         },
         "arm64": {
             "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2026-05-31-74271a7d80/mpv-aarch64-20260531-git-74271a7d80.7z",
-            "hash": "d4d5d751a3521559e0e99be9a87f9e16b4112bf2fdf6476f45d7ed39545bf82e"
+            "hash": "e27b9eae5b86df551016fad45c54407b644c7fd13a3cd37b7634d51b76a0c60d"
         }
     },
     "pre_install": "Remove-Item \"$dir\\updater.bat\", \"$dir\\installer\\updater.ps1\"",
