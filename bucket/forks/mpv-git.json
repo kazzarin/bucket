@@ -1,5 +1,5 @@
 {
-    "version": "2026.05.31.44a9b03f24",
+    "version": "2026.06.01.f239c2dd76",
     "description": "mpv is a free media player for the command line that supports a wide variety of media file formats, audio and video codecs, and subtitle types (AVX2; Nightly)",
     "homepage": "https://mpv.io",
     "license": "GPL-2.0-or-later OR LGPL-2.1-or-later",
@@ -16,12 +16,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2026-05-31-44a9b03f24/mpv-x86_64-v3-20260531-git-44a9b03f24.7z",
-            "hash": "2b71525ab4b17e05d5550adb2bb2f761c5a826984c70f5053c495d0aa600c967"
+            "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2026-06-01-f239c2dd76/mpv-x86_64-v3-20260601-git-f239c2dd76.7z",
+            "hash": "ebcb4198dee33ea133a5f6d5914b4befa0ff29f0b1406da8f2ed7ac19bb561ab"
         },
         "arm64": {
-            "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2026-05-31-44a9b03f24/mpv-aarch64-20260531-git-44a9b03f24.7z",
-            "hash": "612c08022c9570b3256ddf9b202b53b35bd948ab87a9b1dfd5bc78410dce8aa5"
+            "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2026-06-01-f239c2dd76/mpv-aarch64-20260601-git-f239c2dd76.7z",
+            "hash": "368ba89c1a6e6b3bde91b1b2d1aadcd1344409b339e47ccdce0617e927a61b8a"
         }
     },
     "pre_install": "Remove-Item \"$dir\\updater.bat\", \"$dir\\installer\\updater.ps1\"",
