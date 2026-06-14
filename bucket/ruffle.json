@@ -1,16 +1,16 @@
 {
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "An open source Flash Player emulator",
     "homepage": "https://ruffle.rs/",
     "license": "Apache-2.0 OR MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ruffle-rs/ruffle/releases/download/v0.2.0/ruffle-0.2.0-windows-x86_64.zip",
-            "hash": "ceb0374588c1006a3ff6d9dc5282ae21d8f6216f35bf8e7a294abbeb7b8e9792"
+            "url": "https://github.com/ruffle-rs/ruffle/releases/download/v0.3.0/ruffle-0.3.0-windows-x86_64.zip",
+            "hash": "4d3ef46f63beca337f5608e0b79f2959ad748208cc702e7a7fd2ccc88e06be59"
         },
         "32bit": {
-            "url": "https://github.com/ruffle-rs/ruffle/releases/download/v0.2.0/ruffle-0.2.0-windows-x86_32.zip",
-            "hash": "1f08899f3890eb91ce0ebb68d9da950449cdfbb0c4869d424283f7fe9f4dc74d"
+            "url": "https://github.com/ruffle-rs/ruffle/releases/download/v0.3.0/ruffle-0.3.0-windows-x86_32.zip",
+            "hash": "dc1db8348d8dc1698afb22c88e60d3641fd6a12168a27aa5080e202830a12ab8"
         }
     },
     "bin": "ruffle.exe",
