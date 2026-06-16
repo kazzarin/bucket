@@ -1,5 +1,5 @@
 {
-    "version": "5.2.1",
+    "version": "5.2.2",
     "description": "qBittorrent is a fast and stable BitTorrent client based on the Qt toolkit and libtorrent library (libtorrent 2.x)",
     "homepage": "https://www.qbittorrent.org/",
     "license": {
@@ -12,8 +12,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/qbittorrent/qBittorrent/releases/download/release-5.2.1/qbittorrent_5.2.1_lt20_x64_setup.exe#/dl.7z",
-            "hash": "34f55b3c291d9d37a94367e326197c8ab367c814c424d0d701e834cce08e513f"
+            "url": "https://github.com/qbittorrent/qBittorrent/releases/download/release-5.2.2/qbittorrent_5.2.2_lt20_x64_setup.exe#/dl.7z",
+            "hash": "99e0168207514f2a0afe91262229e8348f511b5be50bd27e06601781f11c1e26"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninst.exe\" -Force -Recurse",
