@@ -1,31 +1,26 @@
 {
-    "version": "2026.06.27.62f1494661",
-    "description": "mpv is a free media player for the command line that supports a wide variety of media file formats, audio and video codecs, and subtitle types (AVX2; Nightly)",
+    "version": "0.41.0.821-g62f149466",
+    "description": "mpv is a free media player for the command line that supports a wide variety of media file formats, audio and video codecs, and subtitle types (Nightly)",
     "homepage": "https://mpv.io",
     "license": "GPL-2.0-or-later OR LGPL-2.1-or-later",
-    "notes": [
-        "To set and unset file type associations and AutoPlay handlers, run '$dir\\installer\\mpv-install.bat' and '$dir\\installer\\mpv-uninstall.bat' as administrator, respectively.",
-        "Optionally, you can install Icaros to enable thumbnails for all media types."
-    ],
+    "notes": "To set and unset file type associations and AutoPlay handlers, run '$dir\\mpv-register.bat' and '$dir\\mpv-unregister.bat' as administrator, respectively.",
     "suggest": {
         "yt-dlp": [
             "main/yt-dlp",
             "kazzarin/yt-dlp-nightly"
-        ],
-        "Icaros": "kazzarin/icaros-np"
+        ]
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2026-06-27-62f1494661/mpv-x86_64-v3-20260627-git-62f1494661.7z",
-            "hash": "f780cf5a8735237ee15f73d3a474b67a651ad71f7fc6c527b211e44fb79cad89"
+            "url": "https://github.com/mpv-player/mpv/releases/download/git-release/mpv-v0.41.0-dev-g62f149466-28302012960-x86_64-pc-windows-msvc.zip",
+            "hash": "55930fbd3694126dd4779fe235b33ea6dd05ff5035e872bd06060c11886ca64f"
         },
         "arm64": {
-            "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/2026-06-27-62f1494661/mpv-aarch64-20260627-git-62f1494661.7z",
-            "hash": "e2560c263b05db0b594ed3c1b7c9824b3b07c080f17a06ee2a0941ab89467e66"
+            "url": "https://github.com/mpv-player/mpv/releases/download/git-release/mpv-v0.41.0-dev-g62f149466-28302012960-aarch64-pc-windows-msvc.zip",
+            "hash": "daa7042a7a16aed96b30170facc5e9fba71378840da981bbc2f952b2e596666d"
         }
     },
-    "pre_install": "Remove-Item \"$dir\\updater.bat\", \"$dir\\installer\\updater.ps1\"",
-    "bin": "mpv.com",
+    "env_add_path": ".",
     "shortcuts": [
         [
             "mpv.exe",
@@ -34,17 +29,18 @@
     ],
     "persist": "portable_config",
     "checkver": {
-        "github": "https://github.com/zhongfly/mpv-winbuild",
-        "regex": "(\\d{4})-(\\d{2})-(\\d{2})-([\\da-f]+)",
-        "replace": "${1}.${2}.${3}.${4}"
+        "github": "https://api.github.com/repos/mpv-player/mpv/releases",
+        "jsonpath": "$[?(@.tag_name == 'git-release')].body",
+        "regex": "(?s)Version: `v([\\d.]+)-(\\d+)-(g[\\da-f]+)`.*?-(?<runid>\\d+)-x86_64",
+        "replace": "${1}.${2}-${3}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/$dashVersion/mpv-x86_64-v3-$majorVersion$minorVersion$patchVersion-git-$buildVersion.7z"
+                "url": "https://github.com/mpv-player/mpv/releases/download/git-release/mpv-v$majorVersion.$minorVersion.$patchVersion-dev-$preReleaseVersion-$matchRunid-x86_64-pc-windows-msvc.zip"
             },
             "arm64": {
-                "url": "https://github.com/zhongfly/mpv-winbuild/releases/download/$dashVersion/mpv-aarch64-$majorVersion$minorVersion$patchVersion-git-$buildVersion.7z"
+                "url": "https://github.com/mpv-player/mpv/releases/download/git-release/mpv-v$majorVersion.$minorVersion.$patchVersion-dev-$preReleaseVersion-$matchRunid-aarch64-pc-windows-msvc.zip"
             }
         }
     }
