@@ -6,24 +6,20 @@
     "notes": "Shims only added for latest versions",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v2.0.0/libcurl-impersonate-v2.0.0.x86_64-win32.tar.gz",
-            "hash": "88e5b641a13b9a991857996947837c6f058cc3b0c9142ded0fc17b82008e98b2"
+            "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v2.0.0/curl-impersonate-v2.0.0.x86_64-win32.tar.gz",
+            "hash": "d2e5905f8adf76f042afe78d1758a978253afddf4eb7bdcb8ddfb38c2f0e530c"
         },
         "32bit": {
-            "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v2.0.0/libcurl-impersonate-v2.0.0.i686-win32.tar.gz",
-            "hash": "35d96a5f9f5cd175406915afe71ec27ec232a1435b7c4e170dfb60fa4d2acdde"
+            "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v2.0.0/curl-impersonate-v2.0.0.i686-win32.tar.gz",
+            "hash": "d9dff4f67b973178de017bff83411b87aa34a8d5e4f7ade3e17be207afd47e82"
         },
         "arm64": {
-            "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v2.0.0/libcurl-impersonate-v2.0.0.arm64-win32.tar.gz",
-            "hash": "e51e4a264f66f94f13a97435dde98b7f22237799fd8b0e912b93a842bdc725a5"
+            "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v2.0.0/curl-impersonate-v2.0.0.arm64-win32.tar.gz",
+            "hash": "1df331c526f13afb67b6fded746a598f2808026d6577b73a8d07e0ac96a4eac7"
         }
     },
-    "extract_dir": "./bin",
     "bin": [
-        [
-            "curl.exe",
-            "curl-impersonate"
-        ],
+        "curl-impersonate.exe",
         "curl_chrome146.bat",
         "curl_chrome131_android.bat",
         "curl_firefox147.bat",
@@ -35,13 +31,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v$version/libcurl-impersonate-v$version.x86_64-win32.tar.gz"
+                "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v$version/curl-impersonate-v$version.x86_64-win32.tar.gz"
             },
             "32bit": {
-                "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v$version/libcurl-impersonate-v$version.i686-win32.tar.gz"
+                "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v$version/curl-impersonate-v$version.i686-win32.tar.gz"
             },
             "arm64": {
-                "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v$version/libcurl-impersonate-v$version.arm64-win32.tar.gz"
+                "url": "https://github.com/lexiforest/curl-impersonate/releases/download/v$version/curl-impersonate-v$version.arm64-win32.tar.gz"
             }
         }
     }
