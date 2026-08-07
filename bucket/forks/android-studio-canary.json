@@ -1,5 +1,5 @@
 {
-    "version": "2026.1.4.3",
+    "version": "2026.1.4.4",
     "description": "The official IDE for Android development, which includes everything you need to build Android apps (Canary)",
     "homepage": "https://developer.android.com/studio/preview",
     "license": {
@@ -11,8 +11,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://edgedl.me.gvt1.com/android/studio/ide-zips/2026.1.4.3/android-studio-quail4-canary3-windows.zip",
-            "hash": "1dc4b165611d445c757a15f0ea4a2299b8508558b7e3325d9a74186b217a3d84",
+            "url": "https://edgedl.me.gvt1.com/android/studio/ide-zips/2026.1.4.4/android-studio-quail4-canary4-windows.zip",
+            "hash": "dd49843299bd2e3c6cf4083925efe894ddd18ca493221149d35942ab95123baa",
             "shortcuts": [
                 [
                     "bin\\studio64.exe",
