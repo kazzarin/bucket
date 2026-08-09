@@ -1,5 +1,5 @@
 {
-    "version": "0.41.0.919-g21277b0cc",
+    "version": "0.41.0.921-g513d3407d",
     "description": "mpv is a free media player for the command line that supports a wide variety of media file formats, audio and video codecs, and subtitle types (Nightly)",
     "homepage": "https://mpv.io",
     "license": "GPL-2.0-or-later OR LGPL-2.1-or-later",
@@ -12,12 +12,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mpv-player/mpv/releases/download/git-release/mpv-v0.41.0-dev-g21277b0cc-31067279031-x86_64-pc-windows-msvc.zip",
-            "hash": "a35ad4b7ed5b0a3ad91d82e0f5d31f5eb90cf885c5b585d12b421f55f89f457d"
+            "url": "https://github.com/mpv-player/mpv/releases/download/git-release/mpv-v0.41.0-dev-g513d3407d-31293954660-x86_64-pc-windows-msvc.zip",
+            "hash": "ec3e52ea1096d2c619760450969df453a84e8bff8cf8333c197d481446070c60"
         },
         "arm64": {
-            "url": "https://github.com/mpv-player/mpv/releases/download/git-release/mpv-v0.41.0-dev-g21277b0cc-31067279031-aarch64-pc-windows-msvc.zip",
-            "hash": "3fb860258aa12f8810041b5c0d38100e3036d045fb823aea811d4d9e13891d26"
+            "url": "https://github.com/mpv-player/mpv/releases/download/git-release/mpv-v0.41.0-dev-g513d3407d-31293954660-aarch64-pc-windows-msvc.zip",
+            "hash": "21795365e2b5f6d3efb579185f2092e51275a37dd3c61a3e226728a7f41ddea9"
         }
     },
     "env_add_path": ".",
