@@ -10,11 +10,7 @@
             "extract_dir": "ffmpeg-2026-09-10-git-fd7c73d01e-full_build"
         }
     },
-    "bin": [
-        "bin\\ffmpeg.exe",
-        "bin\\ffplay.exe",
-        "bin\\ffprobe.exe"
-    ],
+    "env_add_path": "bin",
     "checkver": {
         "url": "https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z.ver",
         "regex": "(\\d{4})-(\\d{2})-(\\d{2})-git-([\\da-f]+)",
