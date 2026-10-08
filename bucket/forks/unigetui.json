@@ -1,16 +1,16 @@
 {
-    "version": "2026.3.0",
+    "version": "2026.3.1",
     "description": "A graphical interface for your package managers",
     "homepage": "https://devolutions.net/unigetui/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Devolutions/UniGetUI/releases/download/v2026.3.0/UniGetUI.Installer.exe",
-            "hash": "92c18bc8a3e4d01481474b49315198a7545aa8413ba83d2d929ac74823f455bc"
+            "url": "https://github.com/Devolutions/UniGetUI/releases/download/v2026.3.1/UniGetUI.Installer.exe",
+            "hash": "b4763d43a927b995d1aee3c017b5689a1678b8739bca681a511281e811ae0ea9"
         },
         "arm64": {
-            "url": "https://github.com/Devolutions/UniGetUI/releases/download/v2026.3.0/UniGetUI.Installer.arm64.exe",
-            "hash": "b634b6a28029bb011639cfdad741deac8190b18ed400e98a5f06577aefca6aef"
+            "url": "https://github.com/Devolutions/UniGetUI/releases/download/v2026.3.1/UniGetUI.Installer.arm64.exe",
+            "hash": "8e04f9bad59c561ef1fb9f3b82853911aba77c2124b6335536951a15ce093830"
         }
     },
     "innosetup": true,
