@@ -10,13 +10,11 @@ permissions:
 
 jobs:
   issueHandler:
-    name: IssueHandler
+    name: Issue Handler
+    if: github.event.action == 'opened' || (github.event.action == 'labeled' && contains(github.event.issue.labels.*.name, 'verify'))
     runs-on: windows-2025
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
-      - name: IssueHandler
-        uses: ScoopInstaller/GithubActions@main
-        if: github.event.action == 'opened' || (github.event.action == 'labeled' && contains(github.event.issue.labels.*.name, 'verify'))
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Run Issue Handler
+        uses: ScoopInstaller/GithubActions@5bceeda181721d9d10a18fdcc3ddca6f33467ae6
