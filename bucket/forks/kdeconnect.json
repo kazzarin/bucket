@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://cdn.kde.org/ci-builds/network/kdeconnect-kde/release-26.08/windows/kdeconnect-kde-release_26.08-6731-windows-cl-msvc2022-x86_64.7z",
-            "hash": "6c2470bb2792ec926187277e58bcb5e9c32b6e4604b3b263056427c11c7043b7"
+            "hash": "ac580cb9b20aa1488302578179dfe7408ab15d0e422feffdf824e3b160ad5f78"
         }
     },
     "bin": "bin\\kdeconnect-cli.exe",
