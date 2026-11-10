@@ -1,13 +1,13 @@
 {
-    "version": "37.0.2",
+    "version": "37.0.3",
     "description": "Android SDK Platform-Tools includes tools that interface with the Android platform, such as adb and fastboot",
     "homepage": "https://developer.android.com/studio/releases/platform-tools",
     "license": {
         "identifier": "Freeware",
         "url": "https://developer.android.com/studio/terms"
     },
-    "url": "https://dl.google.com/android/repository/platform-tools_r37.0.2-win.zip",
-    "hash": "6d93a5e63bc1654b70b7b94bec5c6ab46db113df0265beb314055dd253772b58",
+    "url": "https://dl.google.com/android/repository/platform-tools_r37.0.3-win.zip",
+    "hash": "b5d2015f5d5b7a24a2ac646a245f20f63fb501e4174c61863c74bed1df6de4bd",
     "extract_dir": "platform-tools",
     "bin": [
         "adb.exe",
