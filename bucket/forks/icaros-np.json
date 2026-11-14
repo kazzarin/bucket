@@ -1,10 +1,10 @@
 {
-    "version": "3.3.6",
+    "version": "4.0.0a1",
     "description": "Collection of shell extensions that provide File Explorer thumbnails for a variety of video formats (Prerelease)",
     "homepage": "https://github.com/Xanashi/Icaros",
     "license": "Freeware",
-    "url": "https://github.com/Xanashi/Icaros/releases/download/v3.3.6/Icaros_v3.3.6.zip",
-    "hash": "18854b445420e7167b5f54696009c9ffbc0e7917da9d9a686eac71ea3c81d47a",
+    "url": "https://github.com/Xanashi/Icaros/releases/download/v4.0.0a1/Icaros_v4.0.0_a1.zip",
+    "hash": "79b25c3ac0518c286142c281e11ec583437d14fb30ff212b7c6cede93647f2aa",
     "pre_install": [
         "if (!(is_admin)) {",
         "    error \"Administrator rights are required to install $app.\"",
