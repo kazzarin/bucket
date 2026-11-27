@@ -1,5 +1,5 @@
 {
-    "version": "2026.3.1.3",
+    "version": "2026.3.1.4",
     "description": "The official IDE for Android development, which includes everything you need to build Android apps (Canary)",
     "homepage": "https://developer.android.com/studio/preview",
     "license": {
@@ -11,8 +11,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://edgedl.me.gvt1.com/android/studio/ide-zips/2026.3.1.3/android-studio-stingray1-canary3-windows.zip",
-            "hash": "e06f44cf6aea1a9b46c41c9f22b4a3bed5ff2b7bcb4d70d17d87b9acd02533bd",
+            "url": "https://edgedl.me.gvt1.com/android/studio/ide-zips/2026.3.1.4/android-studio-stingray1-canary4-windows.zip",
+            "hash": "f7ff9cb391cb6f0118b1714bd8afa40773a5f1501ce6962f3afdec8edf89239f",
             "shortcuts": [
                 [
                     "bin\\studio64.exe",
